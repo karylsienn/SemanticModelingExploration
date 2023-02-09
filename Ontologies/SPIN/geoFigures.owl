@@ -1,0 +1,3101 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://topbraid.org/geoFigures"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://topbraid.org/geoFigures">
+    <Prefix name="" IRI="http://topbraid.org/geoFigures#"/>
+    <Prefix name="_" IRI="http://topbraid.org/geoFigures#"/>
+    <Prefix name="sp" IRI="http://spinrdf.org/sp#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="spin" IRI="http://spinrdf.org/spin#"/>
+    <Import>http://spinrdf.org/spin</Import>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal>Created with TopBraid Composer</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#Rectangle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Square"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#area"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#height"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#width"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="spin:rule"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="sp:serviceURI"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="spin:inverseBody"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="spin:nextRuleProperty"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="spin:labelTemplate"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="sp:expression"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="spin:select"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="sp:_area"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="spin:ConstructTemplates"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="sp:from"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="sp:templates"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="spin:construct"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="spin:Modules"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="spin:violationDetail"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="sp:modMax"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="sp:resultNodes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="spin:fix"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="sp:reduced"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="sp:eq"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#square1"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="sp:elements"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="sp:_width"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="spin:Info"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="spin:Fatal"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="rdf:List"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rectangle_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="spin:select"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="sp:text"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="spin:rulePropertyMaxIterationCount"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="spin:columnIndex"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="sp:groupBy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="spin:violatesConstraints"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#width"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="spin:evalInGraph"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="rdf:Property"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="spin:SelectTemplates"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="spin:AskTemplates"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="spin:Warning"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="spin:column"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="spin:MagicProperties"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="sp:with"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="spin:ConstructTemplates"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#height"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="xsd:boolean"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="spin:SelectTemplates"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="spin:constraint"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="spin:violatesConstraints"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="sp:using"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="sp:having"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="spin:evalInGraph"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="sp:path1"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="sp:path2"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="sp:usingNamed"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="spin:AskTemplates"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="spin:returnType"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="spin:UpdateTemplates"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="sp:resultVariables"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="sp:values"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="sp:as"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="spin:violationLevel"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="spin:rule"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="sp:insertPattern"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="sp:query"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="spin:cachableForOntologies"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="sp:varNames"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="spin:thisUnbound"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="spin:constructor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="sp:predicate"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="sp:orderBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="spin:update"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="spin:_this"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="sp:mul"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="spin:private"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="rdfs:Class"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="spin:_arg5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="spin:_arg4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="spin:_arg3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="spin:_arg2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="spin:_arg1"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="spin:columnType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="spin:command"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="sp:separator"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="spin:constructViolations"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="sp:ne"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="spin:columnWidth"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="spin:MagicProperties"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="spin:Error"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="sp:graphNameNode"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="spin:violationRoot"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="spin:violationSource"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="sp:where"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="sp:distinct"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="sp:fromNamed"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="sp:arg1"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="sp:arg2"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="sp:into"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="sp:modMin"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="spin:symbol"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#area"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="sp:bindings"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="spin:query"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="sp:deletePattern"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Square"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#genid2147483653"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="sp:_height"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="spin:Templates"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="sp:document"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rectangle"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="spin:body"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="spin:violationPath"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#genid2147483669"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="spin:eval"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="spin:ask"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="rdf:type"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#genid2147483666"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#genid2147483667"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="spin:abstract"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#genid2147483672"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#genid2147483673"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="sp:path"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#genid2147483670"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="spin:Functions"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="sp:subject"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="spin:Templates"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#genid2147483679"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="sp:variable"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#genid2147483675"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#genid2147483676"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#genid2147483677"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="sp:object"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#genid2147483678"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#genid2147483682"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="spin:UpdateTemplates"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#genid2147483683"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#genid2147483684"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#genid2147483685"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#genid2147483680"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#genid2147483681"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="spin:Functions"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="sp:limit"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="spin:construct"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="spin:constructViolations"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#genid2147483686"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#genid2147483687"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="spin:cachable"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="spin:ask"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="spin:eval"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="sp:offset"/>
+    </Declaration>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:Add"/>
+        <Class abbreviatedIRI="sp:Command"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:Add"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:Aggregation"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:AltPath"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:AltPath"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:Asc"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:Asc"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:Ask"/>
+        <Class abbreviatedIRI="sp:Command"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:Ask"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:Avg"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:Avg"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:Bind"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:Bind"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:Clear"/>
+        <Class abbreviatedIRI="sp:Command"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:Clear"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:Command"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:Construct"/>
+        <Class abbreviatedIRI="sp:Command"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:Construct"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:Count"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:Count"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:Create"/>
+        <Class abbreviatedIRI="sp:Command"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:Create"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:Delete"/>
+        <Class abbreviatedIRI="sp:Command"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:Delete"/>
+        <Class abbreviatedIRI="sp:Update"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:Delete"/>
+        <Class abbreviatedIRI="spin:Rule"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:DeleteData"/>
+        <Class abbreviatedIRI="sp:Command"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:DeleteData"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:DeleteWhere"/>
+        <Class abbreviatedIRI="sp:Command"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:DeleteWhere"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:Desc"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:Desc"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:Describe"/>
+        <Class abbreviatedIRI="sp:Command"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:Describe"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:Drop"/>
+        <Class abbreviatedIRI="sp:Command"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:Drop"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:Element"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:ElementGroup"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:ElementGroup"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:ElementList"/>
+        <Class abbreviatedIRI="sp:Element"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:ElementList"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:Exists"/>
+        <Class abbreviatedIRI="sp:Element"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:Exists"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:Filter"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:Filter"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:GroupConcat"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:GroupConcat"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:Insert"/>
+        <Class abbreviatedIRI="sp:Command"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:Insert"/>
+        <Class abbreviatedIRI="sp:Update"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:Insert"/>
+        <Class abbreviatedIRI="spin:Rule"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:InsertData"/>
+        <Class abbreviatedIRI="sp:Command"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:InsertData"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:Let"/>
+        <Class abbreviatedIRI="sp:Element"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:Let"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:Load"/>
+        <Class abbreviatedIRI="sp:Command"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:Load"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:Max"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:Max"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:Min"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:Min"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:Minus"/>
+        <Class abbreviatedIRI="sp:Element"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:Minus"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:ModPath"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:ModPath"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:Modify"/>
+        <Class abbreviatedIRI="sp:Command"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:Modify"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:NamedGraph"/>
+        <Class abbreviatedIRI="sp:Element"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:NamedGraph"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:NotExists"/>
+        <Class abbreviatedIRI="sp:Element"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:NotExists"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:Optional"/>
+        <Class abbreviatedIRI="sp:Element"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:Optional"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:OrderByCondition"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:Path"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:Query"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:Query"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:ReverseLinkPath"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:ReverseLinkPath"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:ReversePath"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:ReversePath"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:Sample"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:Sample"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:Select"/>
+        <Class abbreviatedIRI="sp:Command"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:Select"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:SeqPath"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:SeqPath"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:Service"/>
+        <Class abbreviatedIRI="sp:Element"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:Service"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:SubQuery"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:SubQuery"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:Sum"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:Sum"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:Triple"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:Triple"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:TriplePath"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:TriplePath"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:TriplePattern"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:TriplePattern"/>
+        <Class abbreviatedIRI="sp:Tuple"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:TripleTemplate"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:TripleTemplate"/>
+        <Class abbreviatedIRI="sp:Tuple"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:Tuple"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:Union"/>
+        <Class abbreviatedIRI="sp:Element"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:Union"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:Update"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:Update"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:Values"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:Values"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sp:Variable"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="spin:AskTemplate"/>
+        <Class abbreviatedIRI="spin:Module"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="spin:AskTemplate"/>
+        <Class abbreviatedIRI="rdfs:Class"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="spin:AskTemplates"/>
+        <Class abbreviatedIRI="spin:Modules"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="spin:AskTemplates"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="spin:ConstructTemplate"/>
+        <Class abbreviatedIRI="spin:Module"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="spin:ConstructTemplate"/>
+        <Class abbreviatedIRI="rdfs:Class"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="spin:ConstructTemplates"/>
+        <Class abbreviatedIRI="spin:Modules"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="spin:ConstructTemplates"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="spin:Function"/>
+        <Class abbreviatedIRI="rdfs:Class"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="spin:Functions"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="spin:MagicProperties"/>
+        <Class abbreviatedIRI="spin:Modules"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="spin:MagicProperties"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="spin:MagicProperty"/>
+        <Class abbreviatedIRI="spin:Module"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="spin:MagicProperty"/>
+        <Class abbreviatedIRI="rdfs:Class"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="spin:Rule"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="spin:Rule"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="spin:SelectTemplate"/>
+        <Class abbreviatedIRI="spin:Module"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="spin:SelectTemplate"/>
+        <Class abbreviatedIRI="rdfs:Class"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="spin:SelectTemplates"/>
+        <Class abbreviatedIRI="spin:Modules"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="spin:SelectTemplates"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="spin:Template"/>
+        <Class abbreviatedIRI="rdfs:Class"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="spin:Templates"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="spin:UpdateTemplate"/>
+        <Class abbreviatedIRI="spin:Module"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="spin:UpdateTemplate"/>
+        <Class abbreviatedIRI="rdfs:Class"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="spin:UpdateTemplates"/>
+        <Class abbreviatedIRI="spin:Modules"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="spin:UpdateTemplates"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="spin:ask"/>
+        <Class abbreviatedIRI="spin:Modules"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="spin:ask"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="spin:construct"/>
+        <Class abbreviatedIRI="spin:Functions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="spin:construct"/>
+        <Class abbreviatedIRI="spin:Modules"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="spin:constructViolations"/>
+        <Class abbreviatedIRI="spin:Functions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="spin:constructViolations"/>
+        <Class abbreviatedIRI="spin:Modules"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="spin:eval"/>
+        <Class abbreviatedIRI="spin:Modules"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="spin:eval"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="spin:evalInGraph"/>
+        <Class abbreviatedIRI="spin:Modules"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="spin:evalInGraph"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="spin:select"/>
+        <Class abbreviatedIRI="spin:Functions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="spin:select"/>
+        <Class abbreviatedIRI="spin:Modules"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="spin:violatesConstraints"/>
+        <Class abbreviatedIRI="spin:Modules"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="spin:violatesConstraints"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rectangle"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Square"/>
+        <Class IRI="#Rectangle"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+        <NamedIndividual abbreviatedIRI="sp:_area"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sp:Variable"/>
+        <NamedIndividual abbreviatedIRI="sp:_area"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+        <NamedIndividual abbreviatedIRI="sp:_area"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+        <NamedIndividual abbreviatedIRI="sp:_height"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sp:Variable"/>
+        <NamedIndividual abbreviatedIRI="sp:_height"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+        <NamedIndividual abbreviatedIRI="sp:_height"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+        <NamedIndividual abbreviatedIRI="sp:_width"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sp:Variable"/>
+        <NamedIndividual abbreviatedIRI="sp:_width"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+        <NamedIndividual abbreviatedIRI="sp:_width"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="spin:Module"/>
+        <NamedIndividual abbreviatedIRI="spin:AskTemplates"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="spin:Template"/>
+        <NamedIndividual abbreviatedIRI="spin:AskTemplates"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="rdfs:Class"/>
+        <NamedIndividual abbreviatedIRI="spin:AskTemplates"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="spin:Module"/>
+        <NamedIndividual abbreviatedIRI="spin:ConstructTemplates"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="spin:Template"/>
+        <NamedIndividual abbreviatedIRI="spin:ConstructTemplates"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="rdfs:Class"/>
+        <NamedIndividual abbreviatedIRI="spin:ConstructTemplates"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+        <NamedIndividual abbreviatedIRI="spin:Error"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+        <NamedIndividual abbreviatedIRI="spin:Fatal"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="spin:Module"/>
+        <NamedIndividual abbreviatedIRI="spin:Functions"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="rdfs:Class"/>
+        <NamedIndividual abbreviatedIRI="spin:Functions"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+        <NamedIndividual abbreviatedIRI="spin:Info"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="spin:Function"/>
+        <NamedIndividual abbreviatedIRI="spin:MagicProperties"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="spin:Module"/>
+        <NamedIndividual abbreviatedIRI="spin:MagicProperties"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="rdf:Property"/>
+        <NamedIndividual abbreviatedIRI="spin:MagicProperties"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="rdfs:Class"/>
+        <NamedIndividual abbreviatedIRI="spin:MagicProperties"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="rdfs:Class"/>
+        <NamedIndividual abbreviatedIRI="spin:Modules"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="spin:Module"/>
+        <NamedIndividual abbreviatedIRI="spin:SelectTemplates"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="spin:TableDataProvider"/>
+        <NamedIndividual abbreviatedIRI="spin:SelectTemplates"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="spin:Template"/>
+        <NamedIndividual abbreviatedIRI="spin:SelectTemplates"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="rdfs:Class"/>
+        <NamedIndividual abbreviatedIRI="spin:SelectTemplates"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="spin:Module"/>
+        <NamedIndividual abbreviatedIRI="spin:Templates"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="rdfs:Class"/>
+        <NamedIndividual abbreviatedIRI="spin:Templates"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="spin:Module"/>
+        <NamedIndividual abbreviatedIRI="spin:UpdateTemplates"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="spin:Template"/>
+        <NamedIndividual abbreviatedIRI="spin:UpdateTemplates"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="rdfs:Class"/>
+        <NamedIndividual abbreviatedIRI="spin:UpdateTemplates"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+        <NamedIndividual abbreviatedIRI="spin:Warning"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+        <NamedIndividual abbreviatedIRI="spin:_arg1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+        <NamedIndividual abbreviatedIRI="spin:_arg1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+        <NamedIndividual abbreviatedIRI="spin:_arg2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+        <NamedIndividual abbreviatedIRI="spin:_arg2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+        <NamedIndividual abbreviatedIRI="spin:_arg3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+        <NamedIndividual abbreviatedIRI="spin:_arg3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+        <NamedIndividual abbreviatedIRI="spin:_arg4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+        <NamedIndividual abbreviatedIRI="spin:_arg4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+        <NamedIndividual abbreviatedIRI="spin:_arg5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+        <NamedIndividual abbreviatedIRI="spin:_arg5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+        <NamedIndividual abbreviatedIRI="spin:_this"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+        <NamedIndividual abbreviatedIRI="spin:_this"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="spin:Module"/>
+        <NamedIndividual abbreviatedIRI="spin:ask"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="rdfs:Class"/>
+        <NamedIndividual abbreviatedIRI="spin:ask"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="spin:Function"/>
+        <NamedIndividual abbreviatedIRI="spin:construct"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="spin:Module"/>
+        <NamedIndividual abbreviatedIRI="spin:construct"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="rdf:Property"/>
+        <NamedIndividual abbreviatedIRI="spin:construct"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="rdfs:Class"/>
+        <NamedIndividual abbreviatedIRI="spin:construct"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="spin:Function"/>
+        <NamedIndividual abbreviatedIRI="spin:constructViolations"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="spin:Module"/>
+        <NamedIndividual abbreviatedIRI="spin:constructViolations"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="rdf:Property"/>
+        <NamedIndividual abbreviatedIRI="spin:constructViolations"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="rdfs:Class"/>
+        <NamedIndividual abbreviatedIRI="spin:constructViolations"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="spin:Module"/>
+        <NamedIndividual abbreviatedIRI="spin:eval"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="rdfs:Class"/>
+        <NamedIndividual abbreviatedIRI="spin:eval"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="spin:Module"/>
+        <NamedIndividual abbreviatedIRI="spin:evalInGraph"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="rdfs:Class"/>
+        <NamedIndividual abbreviatedIRI="spin:evalInGraph"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="rdf:Property"/>
+        <NamedIndividual abbreviatedIRI="spin:rule"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="spin:Function"/>
+        <NamedIndividual abbreviatedIRI="spin:select"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="spin:Module"/>
+        <NamedIndividual abbreviatedIRI="spin:select"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="rdf:Property"/>
+        <NamedIndividual abbreviatedIRI="spin:select"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="rdfs:Class"/>
+        <NamedIndividual abbreviatedIRI="spin:select"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="spin:Module"/>
+        <NamedIndividual abbreviatedIRI="spin:violatesConstraints"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="rdfs:Class"/>
+        <NamedIndividual abbreviatedIRI="spin:violatesConstraints"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="rdfs:Class"/>
+        <NamedIndividual IRI="#Rectangle"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Rectangle"/>
+        <NamedIndividual IRI="#Rectangle_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Square"/>
+        <NamedIndividual IRI="#Rectangle_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+        <NamedIndividual IRI="#area"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sp:Command"/>
+        <NamedIndividual IRI="#genid2147483653"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+        <NamedIndividual IRI="#genid2147483653"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="spin:Rule"/>
+        <NamedIndividual IRI="#genid2147483653"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+        <NamedIndividual IRI="#genid2147483653"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sp:Command"/>
+        <NamedIndividual IRI="#genid2147483666"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sp:Query"/>
+        <NamedIndividual IRI="#genid2147483666"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+        <NamedIndividual IRI="#genid2147483666"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="spin:Rule"/>
+        <NamedIndividual IRI="#genid2147483666"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+        <NamedIndividual IRI="#genid2147483666"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sp:Element"/>
+        <NamedIndividual IRI="#genid2147483667"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+        <NamedIndividual IRI="#genid2147483667"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+        <NamedIndividual IRI="#genid2147483667"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sp:Command"/>
+        <NamedIndividual IRI="#genid2147483669"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sp:Query"/>
+        <NamedIndividual IRI="#genid2147483669"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+        <NamedIndividual IRI="#genid2147483669"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="spin:Rule"/>
+        <NamedIndividual IRI="#genid2147483669"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+        <NamedIndividual IRI="#genid2147483669"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sp:Element"/>
+        <NamedIndividual IRI="#genid2147483670"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+        <NamedIndividual IRI="#genid2147483670"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+        <NamedIndividual IRI="#genid2147483670"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sp:Command"/>
+        <NamedIndividual IRI="#genid2147483672"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sp:Query"/>
+        <NamedIndividual IRI="#genid2147483672"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+        <NamedIndividual IRI="#genid2147483672"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+        <NamedIndividual IRI="#genid2147483672"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sp:Element"/>
+        <NamedIndividual IRI="#genid2147483673"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+        <NamedIndividual IRI="#genid2147483673"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+        <NamedIndividual IRI="#genid2147483673"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+        <NamedIndividual IRI="#genid2147483675"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sp:Triple"/>
+        <NamedIndividual IRI="#genid2147483675"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sp:Tuple"/>
+        <NamedIndividual IRI="#genid2147483675"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+        <NamedIndividual IRI="#genid2147483675"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+        <NamedIndividual IRI="#genid2147483676"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sp:Triple"/>
+        <NamedIndividual IRI="#genid2147483676"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sp:Tuple"/>
+        <NamedIndividual IRI="#genid2147483676"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+        <NamedIndividual IRI="#genid2147483676"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+        <NamedIndividual IRI="#genid2147483677"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sp:Triple"/>
+        <NamedIndividual IRI="#genid2147483677"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sp:Tuple"/>
+        <NamedIndividual IRI="#genid2147483677"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+        <NamedIndividual IRI="#genid2147483677"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+        <NamedIndividual IRI="#genid2147483678"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sp:Triple"/>
+        <NamedIndividual IRI="#genid2147483678"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sp:Tuple"/>
+        <NamedIndividual IRI="#genid2147483678"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+        <NamedIndividual IRI="#genid2147483678"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+        <NamedIndividual IRI="#genid2147483679"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sp:Triple"/>
+        <NamedIndividual IRI="#genid2147483679"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sp:Tuple"/>
+        <NamedIndividual IRI="#genid2147483679"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+        <NamedIndividual IRI="#genid2147483679"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+        <NamedIndividual IRI="#genid2147483680"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sp:Triple"/>
+        <NamedIndividual IRI="#genid2147483680"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sp:Tuple"/>
+        <NamedIndividual IRI="#genid2147483680"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+        <NamedIndividual IRI="#genid2147483680"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+        <NamedIndividual IRI="#genid2147483681"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sp:Triple"/>
+        <NamedIndividual IRI="#genid2147483681"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sp:Tuple"/>
+        <NamedIndividual IRI="#genid2147483681"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+        <NamedIndividual IRI="#genid2147483681"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="rdf:List"/>
+        <NamedIndividual IRI="#genid2147483682"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sp:Element"/>
+        <NamedIndividual IRI="#genid2147483683"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sp:ElementGroup"/>
+        <NamedIndividual IRI="#genid2147483683"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sp:ElementList"/>
+        <NamedIndividual IRI="#genid2147483683"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+        <NamedIndividual IRI="#genid2147483683"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="rdf:List"/>
+        <NamedIndividual IRI="#genid2147483683"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+        <NamedIndividual IRI="#genid2147483683"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sp:Element"/>
+        <NamedIndividual IRI="#genid2147483684"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sp:ElementGroup"/>
+        <NamedIndividual IRI="#genid2147483684"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sp:ElementList"/>
+        <NamedIndividual IRI="#genid2147483684"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+        <NamedIndividual IRI="#genid2147483684"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="rdf:List"/>
+        <NamedIndividual IRI="#genid2147483684"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+        <NamedIndividual IRI="#genid2147483684"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+        <NamedIndividual IRI="#genid2147483685"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sp:Triple"/>
+        <NamedIndividual IRI="#genid2147483685"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sp:Tuple"/>
+        <NamedIndividual IRI="#genid2147483685"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+        <NamedIndividual IRI="#genid2147483685"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="rdf:List"/>
+        <NamedIndividual IRI="#genid2147483686"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sp:Element"/>
+        <NamedIndividual IRI="#genid2147483687"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sp:ElementGroup"/>
+        <NamedIndividual IRI="#genid2147483687"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sp:ElementList"/>
+        <NamedIndividual IRI="#genid2147483687"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+        <NamedIndividual IRI="#genid2147483687"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="rdf:List"/>
+        <NamedIndividual IRI="#genid2147483687"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+        <NamedIndividual IRI="#genid2147483687"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+        <NamedIndividual IRI="#height"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Rectangle"/>
+        <NamedIndividual IRI="#square1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Square"/>
+        <NamedIndividual IRI="#square1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+        <NamedIndividual IRI="#width"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+        <NamedIndividual abbreviatedIRI="rdf:type"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="rdfs:Class"/>
+        <NamedIndividual abbreviatedIRI="xsd:boolean"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sp:Construct"/>
+        <AnonymousIndividual nodeID="_:genid2147483666"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sp:Bind"/>
+        <AnonymousIndividual nodeID="_:genid2147483667"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sp:mul"/>
+        <AnonymousIndividual nodeID="_:genid2147483668"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sp:Construct"/>
+        <AnonymousIndividual nodeID="_:genid2147483669"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sp:Filter"/>
+        <AnonymousIndividual nodeID="_:genid2147483670"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sp:eq"/>
+        <AnonymousIndividual nodeID="_:genid2147483671"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sp:Ask"/>
+        <AnonymousIndividual nodeID="_:genid2147483672"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sp:Filter"/>
+        <AnonymousIndividual nodeID="_:genid2147483673"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sp:ne"/>
+        <AnonymousIndividual nodeID="_:genid2147483674"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="spin:command"/>
+        <NamedIndividual abbreviatedIRI="spin:Modules"/>
+        <NamedIndividual IRI="#genid2147483653"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="spin:command"/>
+        <NamedIndividual IRI="#Rectangle"/>
+        <NamedIndividual IRI="#genid2147483666"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="spin:command"/>
+        <NamedIndividual IRI="#Rectangle"/>
+        <NamedIndividual IRI="#genid2147483669"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="spin:rule"/>
+        <NamedIndividual IRI="#Rectangle"/>
+        <AnonymousIndividual nodeID="_:genid2147483666"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="spin:rule"/>
+        <NamedIndividual IRI="#Rectangle"/>
+        <AnonymousIndividual nodeID="_:genid2147483669"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="spin:command"/>
+        <NamedIndividual IRI="#Square"/>
+        <NamedIndividual IRI="#genid2147483672"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="spin:constraint"/>
+        <NamedIndividual IRI="#Square"/>
+        <AnonymousIndividual nodeID="_:genid2147483672"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="spin:query"/>
+        <NamedIndividual IRI="#Square"/>
+        <NamedIndividual IRI="#genid2147483672"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="sp:templates"/>
+        <AnonymousIndividual nodeID="_:genid2147483666"/>
+        <AnonymousIndividual nodeID="_:genid2147483686"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="sp:where"/>
+        <AnonymousIndividual nodeID="_:genid2147483666"/>
+        <AnonymousIndividual nodeID="_:genid2147483687"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="sp:variable"/>
+        <AnonymousIndividual nodeID="_:genid2147483667"/>
+        <NamedIndividual abbreviatedIRI="sp:_area"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="sp:templates"/>
+        <AnonymousIndividual nodeID="_:genid2147483669"/>
+        <AnonymousIndividual nodeID="_:genid2147483682"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="sp:where"/>
+        <AnonymousIndividual nodeID="_:genid2147483669"/>
+        <AnonymousIndividual nodeID="_:genid2147483683"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="sp:where"/>
+        <AnonymousIndividual nodeID="_:genid2147483672"/>
+        <AnonymousIndividual nodeID="_:genid2147483684"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="sp:predicate"/>
+        <AnonymousIndividual nodeID="_:genid2147483675"/>
+        <NamedIndividual IRI="#width"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="sp:subject"/>
+        <AnonymousIndividual nodeID="_:genid2147483675"/>
+        <NamedIndividual abbreviatedIRI="spin:_this"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="sp:predicate"/>
+        <AnonymousIndividual nodeID="_:genid2147483676"/>
+        <NamedIndividual IRI="#height"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="sp:subject"/>
+        <AnonymousIndividual nodeID="_:genid2147483676"/>
+        <NamedIndividual abbreviatedIRI="spin:_this"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="sp:predicate"/>
+        <AnonymousIndividual nodeID="_:genid2147483677"/>
+        <NamedIndividual IRI="#width"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="sp:subject"/>
+        <AnonymousIndividual nodeID="_:genid2147483677"/>
+        <NamedIndividual abbreviatedIRI="spin:_this"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="sp:predicate"/>
+        <AnonymousIndividual nodeID="_:genid2147483678"/>
+        <NamedIndividual IRI="#width"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="sp:subject"/>
+        <AnonymousIndividual nodeID="_:genid2147483678"/>
+        <NamedIndividual abbreviatedIRI="spin:_this"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="sp:predicate"/>
+        <AnonymousIndividual nodeID="_:genid2147483679"/>
+        <NamedIndividual IRI="#height"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="sp:subject"/>
+        <AnonymousIndividual nodeID="_:genid2147483679"/>
+        <NamedIndividual abbreviatedIRI="spin:_this"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="sp:predicate"/>
+        <AnonymousIndividual nodeID="_:genid2147483680"/>
+        <NamedIndividual abbreviatedIRI="rdf:type"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="sp:subject"/>
+        <AnonymousIndividual nodeID="_:genid2147483680"/>
+        <NamedIndividual abbreviatedIRI="spin:_this"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="sp:predicate"/>
+        <AnonymousIndividual nodeID="_:genid2147483681"/>
+        <NamedIndividual IRI="#height"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="sp:subject"/>
+        <AnonymousIndividual nodeID="_:genid2147483681"/>
+        <NamedIndividual abbreviatedIRI="spin:_this"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="sp:predicate"/>
+        <AnonymousIndividual nodeID="_:genid2147483685"/>
+        <NamedIndividual IRI="#area"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="sp:subject"/>
+        <AnonymousIndividual nodeID="_:genid2147483685"/>
+        <NamedIndividual abbreviatedIRI="spin:_this"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#height"/>
+        <NamedIndividual IRI="#Rectangle_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">12</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#width"/>
+        <NamedIndividual IRI="#Rectangle_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">12</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#height"/>
+        <NamedIndividual IRI="#square1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">12</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#width"/>
+        <NamedIndividual IRI="#square1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">13</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="spin:constraint"/>
+        <ObjectProperty abbreviatedIRI="spin:command"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sp:bindings"/>
+        <Class abbreviatedIRI="sp:Element"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sp:bindings"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sp:bindings"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sp:deletePattern"/>
+        <Class abbreviatedIRI="sp:Command"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sp:deletePattern"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sp:deletePattern"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sp:document"/>
+        <Class abbreviatedIRI="sp:Command"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sp:document"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sp:document"/>
+        <Class abbreviatedIRI="sp:Update"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sp:document"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sp:from"/>
+        <Class abbreviatedIRI="sp:Command"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sp:from"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sp:from"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sp:fromNamed"/>
+        <Class abbreviatedIRI="sp:Command"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sp:fromNamed"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sp:fromNamed"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sp:graphNameNode"/>
+        <Class abbreviatedIRI="sp:Element"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sp:graphNameNode"/>
+        <Class abbreviatedIRI="sp:ElementGroup"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sp:graphNameNode"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sp:graphNameNode"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sp:groupBy"/>
+        <Class abbreviatedIRI="sp:Command"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sp:groupBy"/>
+        <Class abbreviatedIRI="sp:Query"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sp:groupBy"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sp:groupBy"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sp:having"/>
+        <Class abbreviatedIRI="sp:Command"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sp:having"/>
+        <Class abbreviatedIRI="sp:Query"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sp:having"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sp:having"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sp:insertPattern"/>
+        <Class abbreviatedIRI="sp:Command"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sp:insertPattern"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sp:insertPattern"/>
+        <Class abbreviatedIRI="sp:Update"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sp:insertPattern"/>
+        <Class abbreviatedIRI="spin:Rule"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sp:insertPattern"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sp:into"/>
+        <Class abbreviatedIRI="sp:Command"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sp:into"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sp:into"/>
+        <Class abbreviatedIRI="sp:Update"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sp:into"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sp:orderBy"/>
+        <Class abbreviatedIRI="sp:Command"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sp:orderBy"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sp:orderBy"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sp:path"/>
+        <Class abbreviatedIRI="sp:Element"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sp:path"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sp:path"/>
+        <Class abbreviatedIRI="sp:Tuple"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sp:path"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sp:predicate"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sp:predicate"/>
+        <Class abbreviatedIRI="sp:Tuple"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sp:predicate"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sp:query"/>
+        <Class abbreviatedIRI="sp:Element"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sp:query"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sp:query"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sp:resultNodes"/>
+        <Class abbreviatedIRI="sp:Command"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sp:resultNodes"/>
+        <Class abbreviatedIRI="sp:Query"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sp:resultNodes"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sp:resultNodes"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sp:resultVariables"/>
+        <Class abbreviatedIRI="sp:Command"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sp:resultVariables"/>
+        <Class abbreviatedIRI="sp:Query"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sp:resultVariables"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sp:resultVariables"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sp:serviceURI"/>
+        <Class abbreviatedIRI="sp:Element"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sp:serviceURI"/>
+        <Class abbreviatedIRI="sp:ElementGroup"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sp:serviceURI"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sp:serviceURI"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sp:subject"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sp:subject"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sp:templates"/>
+        <Class abbreviatedIRI="sp:Command"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sp:templates"/>
+        <Class abbreviatedIRI="sp:Query"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sp:templates"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sp:templates"/>
+        <Class abbreviatedIRI="spin:Rule"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sp:templates"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sp:using"/>
+        <Class abbreviatedIRI="sp:Command"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sp:using"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sp:using"/>
+        <Class abbreviatedIRI="sp:Update"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sp:using"/>
+        <Class abbreviatedIRI="spin:Rule"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sp:using"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sp:usingNamed"/>
+        <Class abbreviatedIRI="sp:Command"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sp:usingNamed"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sp:usingNamed"/>
+        <Class abbreviatedIRI="sp:Update"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sp:usingNamed"/>
+        <Class abbreviatedIRI="spin:Rule"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sp:usingNamed"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sp:values"/>
+        <Class abbreviatedIRI="sp:Command"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sp:values"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sp:values"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sp:varNames"/>
+        <Class abbreviatedIRI="sp:Element"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sp:varNames"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sp:varNames"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sp:variable"/>
+        <Class abbreviatedIRI="sp:Element"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sp:variable"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sp:variable"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sp:with"/>
+        <Class abbreviatedIRI="sp:Command"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sp:with"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sp:with"/>
+        <Class abbreviatedIRI="sp:Update"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sp:with"/>
+        <Class abbreviatedIRI="spin:Rule"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sp:with"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="spin:column"/>
+        <Class abbreviatedIRI="rdfs:Class"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="spin:columnType"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="spin:fix"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="spin:inverseBody"/>
+        <Class abbreviatedIRI="spin:Function"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="spin:inverseBody"/>
+        <Class abbreviatedIRI="spin:Module"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="spin:inverseBody"/>
+        <Class abbreviatedIRI="rdf:Property"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="spin:inverseBody"/>
+        <Class abbreviatedIRI="rdfs:Class"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="spin:nextRuleProperty"/>
+        <Class abbreviatedIRI="rdf:Property"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="spin:returnType"/>
+        <Class abbreviatedIRI="spin:Module"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="spin:returnType"/>
+        <Class abbreviatedIRI="rdfs:Class"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="spin:violationDetail"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="spin:violationLevel"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="spin:violationPath"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="spin:violationRoot"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="spin:violationSource"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="sp:as"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="sp:as"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="sp:elements"/>
+        <Class abbreviatedIRI="sp:Element"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="sp:elements"/>
+        <Class abbreviatedIRI="sp:ElementGroup"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="sp:elements"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="sp:elements"/>
+        <Class abbreviatedIRI="rdf:List"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="sp:elements"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="sp:path"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="sp:path"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="sp:path1"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="sp:path1"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="sp:path2"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="sp:path2"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="sp:query"/>
+        <Class abbreviatedIRI="sp:Command"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="sp:query"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="sp:query"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="sp:values"/>
+        <Class abbreviatedIRI="sp:Element"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="sp:values"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="sp:values"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="sp:variable"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="sp:variable"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="sp:where"/>
+        <Class abbreviatedIRI="sp:Element"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="sp:where"/>
+        <Class abbreviatedIRI="sp:ElementGroup"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="sp:where"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="sp:where"/>
+        <Class abbreviatedIRI="rdf:List"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="sp:where"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="spin:body"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="spin:body"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="spin:column"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="spin:command"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="spin:command"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="spin:constraint"/>
+        <Class abbreviatedIRI="sp:Command"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="spin:constraint"/>
+        <Class abbreviatedIRI="sp:Query"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="spin:constraint"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="spin:constraint"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="spin:constructor"/>
+        <Class abbreviatedIRI="sp:Command"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="spin:constructor"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="spin:constructor"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="spin:fix"/>
+        <Class abbreviatedIRI="spin:Module"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="spin:fix"/>
+        <Class abbreviatedIRI="spin:Template"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="spin:fix"/>
+        <Class abbreviatedIRI="rdfs:Class"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="spin:inverseBody"/>
+        <Class abbreviatedIRI="sp:Command"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="spin:inverseBody"/>
+        <Class abbreviatedIRI="sp:Query"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="spin:inverseBody"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="spin:inverseBody"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="spin:nextRuleProperty"/>
+        <Class abbreviatedIRI="rdf:Property"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="spin:query"/>
+        <Class abbreviatedIRI="sp:Command"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="spin:query"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="spin:query"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="spin:rule"/>
+        <Class abbreviatedIRI="sp:Command"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="spin:rule"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="spin:rule"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="spin:update"/>
+        <Class abbreviatedIRI="sp:Command"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="spin:update"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="spin:update"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="spin:violationDetail"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="spin:violationLevel"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="sp:distinct"/>
+        <Class abbreviatedIRI="sp:Command"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="sp:distinct"/>
+        <Class abbreviatedIRI="sp:Query"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="sp:distinct"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="sp:distinct"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="sp:limit"/>
+        <Class abbreviatedIRI="sp:Command"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="sp:limit"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="sp:limit"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="sp:modMax"/>
+        <Class abbreviatedIRI="sp:Path"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="sp:modMax"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="sp:modMax"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="sp:modMin"/>
+        <Class abbreviatedIRI="sp:Path"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="sp:modMin"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="sp:modMin"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="sp:offset"/>
+        <Class abbreviatedIRI="sp:Command"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="sp:offset"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="sp:offset"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="sp:reduced"/>
+        <Class abbreviatedIRI="sp:Command"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="sp:reduced"/>
+        <Class abbreviatedIRI="sp:Query"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="sp:reduced"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="sp:reduced"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="sp:separator"/>
+        <Class abbreviatedIRI="sp:Aggregation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="sp:separator"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="sp:separator"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="sp:varName"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="sp:varName"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="spin:abstract"/>
+        <Class abbreviatedIRI="rdfs:Class"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="spin:cachable"/>
+        <Class abbreviatedIRI="spin:Module"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="spin:cachable"/>
+        <Class abbreviatedIRI="rdfs:Class"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="spin:cachableForOntologies"/>
+        <Class abbreviatedIRI="spin:Module"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="spin:cachableForOntologies"/>
+        <Class abbreviatedIRI="rdfs:Class"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="spin:columnIndex"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="spin:columnWidth"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="spin:labelTemplate"/>
+        <Class abbreviatedIRI="spin:Module"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="spin:labelTemplate"/>
+        <Class abbreviatedIRI="rdfs:Class"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="spin:private"/>
+        <Class abbreviatedIRI="rdfs:Class"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="spin:rulePropertyMaxIterationCount"/>
+        <Class abbreviatedIRI="rdf:Property"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="spin:symbol"/>
+        <Class abbreviatedIRI="spin:Module"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="spin:symbol"/>
+        <Class abbreviatedIRI="rdfs:Class"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="spin:thisUnbound"/>
+        <Class abbreviatedIRI="sp:Command"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="spin:thisUnbound"/>
+        <Class abbreviatedIRI="sp:Query"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="spin:thisUnbound"/>
+        <Class abbreviatedIRI="sp:SystemClass"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="spin:thisUnbound"/>
+        <Class abbreviatedIRI="spin:Rule"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="spin:thisUnbound"/>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#area"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#height"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#width"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>S1</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Rectangle"/>
+                <Variable IRI="#p"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#height"/>
+                <Variable IRI="#p"/>
+                <Variable IRI="#h"/>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#width"/>
+                <Variable IRI="#p"/>
+                <Variable IRI="#w"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#equal">
+                <Variable IRI="#w"/>
+                <Variable IRI="#h"/>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#Square"/>
+                <Variable IRI="#p"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sp:varName"/>
+        <AbbreviatedIRI>sp:_area</AbbreviatedIRI>
+        <Literal>area</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sp:varName"/>
+        <AbbreviatedIRI>sp:_height</AbbreviatedIRI>
+        <Literal>height</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sp:varName"/>
+        <AbbreviatedIRI>sp:_width</AbbreviatedIRI>
+        <Literal>width</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Rectangle</IRI>
+        <Literal>Rectangle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Rectangle_1</IRI>
+        <Literal>Rectangle that is supposed to be square</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Rectangle_1</IRI>
+        <Literal>Rectangle_1 </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Square</IRI>
+        <Literal>Square</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#area</IRI>
+        <Literal>area</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#height</IRI>
+        <Literal>height</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#square1</IRI>
+        <Literal>square1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#width</IRI>
+        <Literal>width</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sp:text"/>
+        <AnonymousIndividual nodeID="_:genid2147483666"/>
+        <Literal>PREFIX  :     &lt;http://topbraid.org/geoFigures#&gt;
+PREFIX  owl:  &lt;http://www.w3.org/2002/07/owl#&gt;
+PREFIX  fn:   &lt;http://www.w3.org/2005/xpath-functions#&gt;
+PREFIX  tops: &lt;http://www.topbraid.org/tops#&gt;
+PREFIX  xsd:  &lt;http://www.w3.org/2001/XMLSchema#&gt;
+PREFIX  rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+PREFIX  smf:  &lt;http://topbraid.org/sparqlmotionfunctions#&gt;
+PREFIX  spif: &lt;http://spinrdf.org/spif#&gt;
+PREFIX  backspin: &lt;http://topbraid.org/backspin#&gt;
+PREFIX  tablesmap: &lt;http://topbraid.org/spin/tablesmap#&gt;
+PREFIX  search: &lt;http://topbraid.org/search#&gt;
+PREFIX  tables: &lt;http://topbraid.org/tables#&gt;
+PREFIX  sml:  &lt;http://topbraid.org/sparqlmotionlib#&gt;
+PREFIX  ui:   &lt;http://uispin.org/ui#&gt;
+PREFIX  arg:  &lt;http://spinrdf.org/arg#&gt;
+PREFIX  sm2wsdl: &lt;http://topbraid.org/sparqlmotion/sm2wsdl.sms#&gt;
+PREFIX  sm:   &lt;http://topbraid.org/sparqlmotion#&gt;
+PREFIX  spinmap: &lt;http://spinrdf.org/spinmap#&gt;
+PREFIX  sp:   &lt;http://spinrdf.org/sp#&gt;
+PREFIX  spinmapl: &lt;http://topbraid.org/spin/spinmapl#&gt;
+PREFIX  afn:  &lt;http://jena.hpl.hp.com/ARQ/function#&gt;
+PREFIX  skosspin: &lt;http://topbraid.org/spin/skosspin#&gt;
+PREFIX  owlrl: &lt;http://topbraid.org/spin/owlrl#&gt;
+PREFIX  spl:  &lt;http://spinrdf.org/spl#&gt;
+PREFIX  jfn:  &lt;java:org.apache.jena.sparql.function.library.&gt;
+PREFIX  spr:  &lt;http://spinrdf.org/spr#&gt;
+PREFIX  rdf:  &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+PREFIX  pf:   &lt;http://jena.hpl.hp.com/ARQ/property#&gt;
+PREFIX  spin: &lt;http://spinrdf.org/spin#&gt;
+PREFIX  spra: &lt;http://spinrdf.org/spra#&gt;
+PREFIX  swa:  &lt;http://topbraid.org/swa#&gt;
+
+CONSTRUCT 
+  { 
+    ?this :area ?area .
+  }
+WHERE
+  { ?this  :height  ?height ;
+           :width   ?width
+    LET (?area := ( ?width * ?height ))
+  }
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnonymousIndividual nodeID="_:genid2147483666"/>
+        <Literal>Computes area := width * height</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sp:expression"/>
+        <AnonymousIndividual nodeID="_:genid2147483667"/>
+        <AnonymousIndividual nodeID="_:genid2147483668"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sp:arg1"/>
+        <AnonymousIndividual nodeID="_:genid2147483668"/>
+        <AbbreviatedIRI>sp:_width</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sp:arg2"/>
+        <AnonymousIndividual nodeID="_:genid2147483668"/>
+        <AbbreviatedIRI>sp:_height</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sp:text"/>
+        <AnonymousIndividual nodeID="_:genid2147483669"/>
+        <Literal>PREFIX  :     &lt;http://topbraid.org/geoFigures#&gt;
+PREFIX  owl:  &lt;http://www.w3.org/2002/07/owl#&gt;
+PREFIX  fn:   &lt;http://www.w3.org/2005/xpath-functions#&gt;
+PREFIX  tops: &lt;http://www.topbraid.org/tops#&gt;
+PREFIX  xsd:  &lt;http://www.w3.org/2001/XMLSchema#&gt;
+PREFIX  rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+PREFIX  smf:  &lt;http://topbraid.org/sparqlmotionfunctions#&gt;
+PREFIX  spif: &lt;http://spinrdf.org/spif#&gt;
+PREFIX  backspin: &lt;http://topbraid.org/backspin#&gt;
+PREFIX  tablesmap: &lt;http://topbraid.org/spin/tablesmap#&gt;
+PREFIX  search: &lt;http://topbraid.org/search#&gt;
+PREFIX  tables: &lt;http://topbraid.org/tables#&gt;
+PREFIX  sml:  &lt;http://topbraid.org/sparqlmotionlib#&gt;
+PREFIX  ui:   &lt;http://uispin.org/ui#&gt;
+PREFIX  arg:  &lt;http://spinrdf.org/arg#&gt;
+PREFIX  sm2wsdl: &lt;http://topbraid.org/sparqlmotion/sm2wsdl.sms#&gt;
+PREFIX  sm:   &lt;http://topbraid.org/sparqlmotion#&gt;
+PREFIX  spinmap: &lt;http://spinrdf.org/spinmap#&gt;
+PREFIX  sp:   &lt;http://spinrdf.org/sp#&gt;
+PREFIX  spinmapl: &lt;http://topbraid.org/spin/spinmapl#&gt;
+PREFIX  afn:  &lt;http://jena.hpl.hp.com/ARQ/function#&gt;
+PREFIX  skosspin: &lt;http://topbraid.org/spin/skosspin#&gt;
+PREFIX  owlrl: &lt;http://topbraid.org/spin/owlrl#&gt;
+PREFIX  spl:  &lt;http://spinrdf.org/spl#&gt;
+PREFIX  jfn:  &lt;java:org.apache.jena.sparql.function.library.&gt;
+PREFIX  spr:  &lt;http://spinrdf.org/spr#&gt;
+PREFIX  rdf:  &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+PREFIX  pf:   &lt;http://jena.hpl.hp.com/ARQ/property#&gt;
+PREFIX  spin: &lt;http://spinrdf.org/spin#&gt;
+PREFIX  spra: &lt;http://spinrdf.org/spra#&gt;
+PREFIX  swa:  &lt;http://topbraid.org/swa#&gt;
+
+CONSTRUCT 
+  { 
+    ?this rdf:type :Square .
+  }
+WHERE
+  { ?this  :height  ?height ;
+           :width   ?width
+    FILTER ( ?height = ?width )
+  }
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnonymousIndividual nodeID="_:genid2147483669"/>
+        <Literal>Infer a square if width and height are the same.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sp:expression"/>
+        <AnonymousIndividual nodeID="_:genid2147483670"/>
+        <AnonymousIndividual nodeID="_:genid2147483671"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sp:arg1"/>
+        <AnonymousIndividual nodeID="_:genid2147483671"/>
+        <AbbreviatedIRI>sp:_height</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sp:arg2"/>
+        <AnonymousIndividual nodeID="_:genid2147483671"/>
+        <AbbreviatedIRI>sp:_width</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sp:text"/>
+        <AnonymousIndividual nodeID="_:genid2147483672"/>
+        <Literal>PREFIX  :     &lt;http://topbraid.org/geoFigures#&gt;
+PREFIX  owl:  &lt;http://www.w3.org/2002/07/owl#&gt;
+PREFIX  fn:   &lt;http://www.w3.org/2005/xpath-functions#&gt;
+PREFIX  tops: &lt;http://www.topbraid.org/tops#&gt;
+PREFIX  xsd:  &lt;http://www.w3.org/2001/XMLSchema#&gt;
+PREFIX  rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+PREFIX  smf:  &lt;http://topbraid.org/sparqlmotionfunctions#&gt;
+PREFIX  spif: &lt;http://spinrdf.org/spif#&gt;
+PREFIX  backspin: &lt;http://topbraid.org/backspin#&gt;
+PREFIX  tablesmap: &lt;http://topbraid.org/spin/tablesmap#&gt;
+PREFIX  search: &lt;http://topbraid.org/search#&gt;
+PREFIX  tables: &lt;http://topbraid.org/tables#&gt;
+PREFIX  sml:  &lt;http://topbraid.org/sparqlmotionlib#&gt;
+PREFIX  ui:   &lt;http://uispin.org/ui#&gt;
+PREFIX  arg:  &lt;http://spinrdf.org/arg#&gt;
+PREFIX  sm2wsdl: &lt;http://topbraid.org/sparqlmotion/sm2wsdl.sms#&gt;
+PREFIX  sm:   &lt;http://topbraid.org/sparqlmotion#&gt;
+PREFIX  spinmap: &lt;http://spinrdf.org/spinmap#&gt;
+PREFIX  sp:   &lt;http://spinrdf.org/sp#&gt;
+PREFIX  spinmapl: &lt;http://topbraid.org/spin/spinmapl#&gt;
+PREFIX  afn:  &lt;http://jena.hpl.hp.com/ARQ/function#&gt;
+PREFIX  skosspin: &lt;http://topbraid.org/spin/skosspin#&gt;
+PREFIX  owlrl: &lt;http://topbraid.org/spin/owlrl#&gt;
+PREFIX  spl:  &lt;http://spinrdf.org/spl#&gt;
+PREFIX  jfn:  &lt;java:org.apache.jena.sparql.function.library.&gt;
+PREFIX  spr:  &lt;http://spinrdf.org/spr#&gt;
+PREFIX  rdf:  &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+PREFIX  pf:   &lt;http://jena.hpl.hp.com/ARQ/property#&gt;
+PREFIX  spin: &lt;http://spinrdf.org/spin#&gt;
+PREFIX  spra: &lt;http://spinrdf.org/spra#&gt;
+PREFIX  swa:  &lt;http://topbraid.org/swa#&gt;
+
+ASK
+WHERE
+  { ?this  :height  ?height ;
+           :width   ?width
+    FILTER ( ?width != ?height )
+  }
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnonymousIndividual nodeID="_:genid2147483672"/>
+        <Literal>Checks if height = width</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sp:expression"/>
+        <AnonymousIndividual nodeID="_:genid2147483673"/>
+        <AnonymousIndividual nodeID="_:genid2147483674"/>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sp:arg1"/>
+        <AnonymousIndividual nodeID="_:genid2147483674"/>
+        <AbbreviatedIRI>sp:_width</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sp:arg2"/>
+        <AnonymousIndividual nodeID="_:genid2147483674"/>
+        <AbbreviatedIRI>sp:_height</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sp:object"/>
+        <AnonymousIndividual nodeID="_:genid2147483675"/>
+        <AbbreviatedIRI>sp:_width</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sp:object"/>
+        <AnonymousIndividual nodeID="_:genid2147483676"/>
+        <AbbreviatedIRI>sp:_height</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sp:object"/>
+        <AnonymousIndividual nodeID="_:genid2147483677"/>
+        <AbbreviatedIRI>sp:_width</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sp:object"/>
+        <AnonymousIndividual nodeID="_:genid2147483678"/>
+        <AbbreviatedIRI>sp:_width</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sp:object"/>
+        <AnonymousIndividual nodeID="_:genid2147483679"/>
+        <AbbreviatedIRI>sp:_height</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sp:object"/>
+        <AnonymousIndividual nodeID="_:genid2147483680"/>
+        <IRI>#Square</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sp:object"/>
+        <AnonymousIndividual nodeID="_:genid2147483681"/>
+        <AbbreviatedIRI>sp:_height</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sp:object"/>
+        <AnonymousIndividual nodeID="_:genid2147483685"/>
+        <AbbreviatedIRI>sp:_area</AbbreviatedIRI>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

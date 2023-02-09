@@ -1,0 +1,202 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/karolniewiadomski/ontologies/2022/8/friends_eating_habits"
+     xml:base="http://www.semanticweb.org/karolniewiadomski/ontologies/2022/8/friends_eating_habits"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:friends_eating_habits="http://www.semanticweb.org/karolniewiadomski/ontologies/2022/8/friends_eating_habits#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/karolniewiadomski/ontologies/2022/8/friends_eating_habits">
+        <rdfs:comment>The ontology which describes people with some of dietary restrictions.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/karolniewiadomski/ontologies/2022/8/friends_eating_habits#isOnDiet -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/karolniewiadomski/ontologies/2022/8/friends_eating_habits#isOnDiet">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/karolniewiadomski/ontologies/2022/8/friends_eating_habits#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/karolniewiadomski/ontologies/2022/8/friends_eating_habits#Diet"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/karolniewiadomski/ontologies/2022/8/friends_eating_habits#hasCalorieRequirement_max -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/karolniewiadomski/ontologies/2022/8/friends_eating_habits#hasCalorieRequirement_max">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/karolniewiadomski/ontologies/2022/8/friends_eating_habits#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>The maximum amount of calories that a person can eat.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/karolniewiadomski/ontologies/2022/8/friends_eating_habits#hasCalorieRequirement_min -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/karolniewiadomski/ontologies/2022/8/friends_eating_habits#hasCalorieRequirement_min">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/karolniewiadomski/ontologies/2022/8/friends_eating_habits#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>The minimum amount of calories that a person should eat.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/karolniewiadomski/ontologies/2022/8/friends_eating_habits#Diet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karolniewiadomski/ontologies/2022/8/friends_eating_habits#Diet">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karolniewiadomski/ontologies/2022/8/friends_eating_habits#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karolniewiadomski/ontologies/2022/8/friends_eating_habits#Female -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karolniewiadomski/ontologies/2022/8/friends_eating_habits#Female">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karolniewiadomski/ontologies/2022/8/friends_eating_habits#Person"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karolniewiadomski/ontologies/2022/8/friends_eating_habits#Male"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karolniewiadomski/ontologies/2022/8/friends_eating_habits#HighCarbDiet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karolniewiadomski/ontologies/2022/8/friends_eating_habits#HighCarbDiet">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karolniewiadomski/ontologies/2022/8/friends_eating_habits#Diet"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karolniewiadomski/ontologies/2022/8/friends_eating_habits#LowCarbDiet"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karolniewiadomski/ontologies/2022/8/friends_eating_habits#LowCarbDiet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karolniewiadomski/ontologies/2022/8/friends_eating_habits#LowCarbDiet">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karolniewiadomski/ontologies/2022/8/friends_eating_habits#Diet"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karolniewiadomski/ontologies/2022/8/friends_eating_habits#Male -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karolniewiadomski/ontologies/2022/8/friends_eating_habits#Male">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karolniewiadomski/ontologies/2022/8/friends_eating_habits#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karolniewiadomski/ontologies/2022/8/friends_eating_habits#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karolniewiadomski/ontologies/2022/8/friends_eating_habits#Person">
+        <rdfs:comment>A general class for Persons.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karolniewiadomski/ontologies/2022/8/friends_eating_habits#VeganDiet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karolniewiadomski/ontologies/2022/8/friends_eating_habits#VeganDiet">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karolniewiadomski/ontologies/2022/8/friends_eating_habits#Diet"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/karolniewiadomski/ontologies/2022/8/friends_eating_habits#VegetarianDiet"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karolniewiadomski/ontologies/2022/8/friends_eating_habits#VegetarianDiet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/karolniewiadomski/ontologies/2022/8/friends_eating_habits#VegetarianDiet">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/karolniewiadomski/ontologies/2022/8/friends_eating_habits#Diet"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/karolniewiadomski/ontologies/2022/8/friends_eating_habits#Agata -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/karolniewiadomski/ontologies/2022/8/friends_eating_habits#Agata">
+        <rdf:type rdf:resource="http://www.semanticweb.org/karolniewiadomski/ontologies/2022/8/friends_eating_habits#Female"/>
+        <friends_eating_habits:hasCalorieRequirement_max rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">200</friends_eating_habits:hasCalorieRequirement_max>
+        <friends_eating_habits:hasCalorieRequirement_min rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</friends_eating_habits:hasCalorieRequirement_min>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/karolniewiadomski/ontologies/2022/8/friends_eating_habits#Jack -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/karolniewiadomski/ontologies/2022/8/friends_eating_habits#Jack">
+        <rdf:type rdf:resource="http://www.semanticweb.org/karolniewiadomski/ontologies/2022/8/friends_eating_habits#Male"/>
+        <friends_eating_habits:hasCalorieRequirement_max rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">900</friends_eating_habits:hasCalorieRequirement_max>
+        <friends_eating_habits:hasCalorieRequirement_min rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">200</friends_eating_habits:hasCalorieRequirement_min>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/karolniewiadomski/ontologies/2022/8/friends_eating_habits#Karol -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/karolniewiadomski/ontologies/2022/8/friends_eating_habits#Karol">
+        <rdf:type rdf:resource="http://www.semanticweb.org/karolniewiadomski/ontologies/2022/8/friends_eating_habits#Male"/>
+        <friends_eating_habits:hasCalorieRequirement_max rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1000</friends_eating_habits:hasCalorieRequirement_max>
+        <friends_eating_habits:hasCalorieRequirement_min rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">300</friends_eating_habits:hasCalorieRequirement_min>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/karolniewiadomski/ontologies/2022/8/friends_eating_habits#Marianna -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/karolniewiadomski/ontologies/2022/8/friends_eating_habits#Marianna">
+        <rdf:type rdf:resource="http://www.semanticweb.org/karolniewiadomski/ontologies/2022/8/friends_eating_habits#Female"/>
+        <friends_eating_habits:hasCalorieRequirement_max rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">500</friends_eating_habits:hasCalorieRequirement_max>
+        <friends_eating_habits:hasCalorieRequirement_min rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">200</friends_eating_habits:hasCalorieRequirement_min>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

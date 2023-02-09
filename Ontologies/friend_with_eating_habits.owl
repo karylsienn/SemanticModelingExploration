@@ -1,0 +1,218 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/karolniewiadomski/ontologies/2022/8/friends_eating_habits"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/karolniewiadomski/ontologies/2022/8/friends_eating_habits">
+    <Prefix name="" IRI="http://www.semanticweb.org/karolniewiadomski/ontologies/2022/8/friends_eating_habits"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>The ontology which describes people with some of dietary restrictions.</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#Diet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Female"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HighCarbDiet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LowCarbDiet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Male"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VeganDiet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VegetarianDiet"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isOnDiet"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasCalorieRequirement_max"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasCalorieRequirement_min"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Agata"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Jack"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Karol"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Marianna"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Female"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HighCarbDiet"/>
+        <Class IRI="#Diet"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LowCarbDiet"/>
+        <Class IRI="#Diet"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Male"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VeganDiet"/>
+        <Class IRI="#Diet"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VegetarianDiet"/>
+        <Class IRI="#Diet"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Diet"/>
+        <Class IRI="#Person"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Female"/>
+        <Class IRI="#Male"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#HighCarbDiet"/>
+        <Class IRI="#LowCarbDiet"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#VeganDiet"/>
+        <Class IRI="#VegetarianDiet"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Agata"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Male"/>
+        <NamedIndividual IRI="#Jack"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Male"/>
+        <NamedIndividual IRI="#Karol"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#Marianna"/>
+    </ClassAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCalorieRequirement_max"/>
+        <NamedIndividual IRI="#Agata"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">200</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCalorieRequirement_min"/>
+        <NamedIndividual IRI="#Agata"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">100</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCalorieRequirement_max"/>
+        <NamedIndividual IRI="#Jack"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">900</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCalorieRequirement_min"/>
+        <NamedIndividual IRI="#Jack"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">200</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCalorieRequirement_max"/>
+        <NamedIndividual IRI="#Karol"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCalorieRequirement_min"/>
+        <NamedIndividual IRI="#Karol"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">300</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCalorieRequirement_max"/>
+        <NamedIndividual IRI="#Marianna"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">500</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCalorieRequirement_min"/>
+        <NamedIndividual IRI="#Marianna"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">200</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isOnDiet"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isOnDiet"/>
+        <Class IRI="#Diet"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasCalorieRequirement_max"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasCalorieRequirement_min"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasCalorieRequirement_max"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasCalorieRequirement_min"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasCalorieRequirement_max"/>
+        <Class IRI="#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasCalorieRequirement_min"/>
+        <Class IRI="#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasCalorieRequirement_max"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasCalorieRequirement_min"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Person</IRI>
+        <Literal>A general class for Persons.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasCalorieRequirement_max</IRI>
+        <Literal>The maximum amount of calories that a person can eat.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasCalorieRequirement_min</IRI>
+        <Literal>The minimum amount of calories that a person should eat.</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

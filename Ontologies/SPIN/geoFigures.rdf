@@ -1,0 +1,2251 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://topbraid.org/geoFigures#"
+     xml:base="http://topbraid.org/geoFigures"
+     xmlns:_="http://topbraid.org/geoFigures#"
+     xmlns:sp="http://spinrdf.org/sp#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:spl="http://spinrdf.org/spl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:spin="http://spinrdf.org/spin#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#">
+    <owl:Ontology rdf:about="http://topbraid.org/geoFigures">
+        <owl:imports rdf:resource="http://spinrdf.org/spin"/>
+        <owl:versionInfo>Created with TopBraid Composer</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://spinrdf.org/sp#bindings -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/sp#bindings">
+        <rdfs:domain rdf:resource="http://spinrdf.org/sp#Element"/>
+        <rdfs:domain rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/sp#deletePattern -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/sp#deletePattern">
+        <rdfs:domain rdf:resource="http://spinrdf.org/sp#Command"/>
+        <rdfs:domain rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/sp#distinct -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/sp#distinct">
+        <rdfs:domain rdf:resource="http://spinrdf.org/sp#Command"/>
+        <rdfs:domain rdf:resource="http://spinrdf.org/sp#Query"/>
+        <rdfs:domain rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/sp#document -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/sp#document">
+        <rdfs:domain rdf:resource="http://spinrdf.org/sp#Command"/>
+        <rdfs:domain rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdfs:domain rdf:resource="http://spinrdf.org/sp#Update"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/sp#from -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/sp#from">
+        <rdfs:domain rdf:resource="http://spinrdf.org/sp#Command"/>
+        <rdfs:domain rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/sp#fromNamed -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/sp#fromNamed">
+        <rdfs:domain rdf:resource="http://spinrdf.org/sp#Command"/>
+        <rdfs:domain rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/sp#graphNameNode -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/sp#graphNameNode">
+        <rdfs:domain rdf:resource="http://spinrdf.org/sp#Element"/>
+        <rdfs:domain rdf:resource="http://spinrdf.org/sp#ElementGroup"/>
+        <rdfs:domain rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/sp#groupBy -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/sp#groupBy">
+        <rdfs:domain rdf:resource="http://spinrdf.org/sp#Command"/>
+        <rdfs:domain rdf:resource="http://spinrdf.org/sp#Query"/>
+        <rdfs:domain rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/sp#having -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/sp#having">
+        <rdfs:domain rdf:resource="http://spinrdf.org/sp#Command"/>
+        <rdfs:domain rdf:resource="http://spinrdf.org/sp#Query"/>
+        <rdfs:domain rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/sp#insertPattern -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/sp#insertPattern">
+        <rdfs:domain rdf:resource="http://spinrdf.org/sp#Command"/>
+        <rdfs:domain rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdfs:domain rdf:resource="http://spinrdf.org/sp#Update"/>
+        <rdfs:domain rdf:resource="http://spinrdf.org/spin#Rule"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/sp#into -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/sp#into">
+        <rdfs:domain rdf:resource="http://spinrdf.org/sp#Command"/>
+        <rdfs:domain rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdfs:domain rdf:resource="http://spinrdf.org/sp#Update"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/sp#limit -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/sp#limit">
+        <rdfs:domain rdf:resource="http://spinrdf.org/sp#Command"/>
+        <rdfs:domain rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/sp#modMax -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/sp#modMax">
+        <rdfs:domain rdf:resource="http://spinrdf.org/sp#Path"/>
+        <rdfs:domain rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/sp#modMin -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/sp#modMin">
+        <rdfs:domain rdf:resource="http://spinrdf.org/sp#Path"/>
+        <rdfs:domain rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/sp#offset -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/sp#offset">
+        <rdfs:domain rdf:resource="http://spinrdf.org/sp#Command"/>
+        <rdfs:domain rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/sp#orderBy -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/sp#orderBy">
+        <rdfs:domain rdf:resource="http://spinrdf.org/sp#Command"/>
+        <rdfs:domain rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/sp#predicate -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/sp#predicate">
+        <rdfs:domain rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdfs:domain rdf:resource="http://spinrdf.org/sp#Tuple"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/sp#reduced -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/sp#reduced">
+        <rdfs:domain rdf:resource="http://spinrdf.org/sp#Command"/>
+        <rdfs:domain rdf:resource="http://spinrdf.org/sp#Query"/>
+        <rdfs:domain rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/sp#resultNodes -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/sp#resultNodes">
+        <rdfs:domain rdf:resource="http://spinrdf.org/sp#Command"/>
+        <rdfs:domain rdf:resource="http://spinrdf.org/sp#Query"/>
+        <rdfs:domain rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/sp#resultVariables -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/sp#resultVariables">
+        <rdfs:domain rdf:resource="http://spinrdf.org/sp#Command"/>
+        <rdfs:domain rdf:resource="http://spinrdf.org/sp#Query"/>
+        <rdfs:domain rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/sp#separator -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/sp#separator">
+        <rdfs:domain rdf:resource="http://spinrdf.org/sp#Aggregation"/>
+        <rdfs:domain rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/sp#serviceURI -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/sp#serviceURI">
+        <rdfs:domain rdf:resource="http://spinrdf.org/sp#Element"/>
+        <rdfs:domain rdf:resource="http://spinrdf.org/sp#ElementGroup"/>
+        <rdfs:domain rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/sp#subject -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/sp#subject">
+        <rdfs:domain rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/sp#templates -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/sp#templates">
+        <rdfs:domain rdf:resource="http://spinrdf.org/sp#Command"/>
+        <rdfs:domain rdf:resource="http://spinrdf.org/sp#Query"/>
+        <rdfs:domain rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdfs:domain rdf:resource="http://spinrdf.org/spin#Rule"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/sp#using -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/sp#using">
+        <rdfs:domain rdf:resource="http://spinrdf.org/sp#Command"/>
+        <rdfs:domain rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdfs:domain rdf:resource="http://spinrdf.org/sp#Update"/>
+        <rdfs:domain rdf:resource="http://spinrdf.org/spin#Rule"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/sp#usingNamed -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/sp#usingNamed">
+        <rdfs:domain rdf:resource="http://spinrdf.org/sp#Command"/>
+        <rdfs:domain rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdfs:domain rdf:resource="http://spinrdf.org/sp#Update"/>
+        <rdfs:domain rdf:resource="http://spinrdf.org/spin#Rule"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/sp#varName -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/sp#varName">
+        <rdfs:domain rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/sp#varNames -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/sp#varNames">
+        <rdfs:domain rdf:resource="http://spinrdf.org/sp#Element"/>
+        <rdfs:domain rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/sp#with -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/sp#with">
+        <rdfs:domain rdf:resource="http://spinrdf.org/sp#Command"/>
+        <rdfs:domain rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdfs:domain rdf:resource="http://spinrdf.org/sp#Update"/>
+        <rdfs:domain rdf:resource="http://spinrdf.org/spin#Rule"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/spin#abstract -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/spin#abstract">
+        <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/spin#cachable -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/spin#cachable">
+        <rdfs:domain rdf:resource="http://spinrdf.org/spin#Module"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/spin#cachableForOntologies -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/spin#cachableForOntologies">
+        <rdfs:domain rdf:resource="http://spinrdf.org/spin#Module"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/spin#columnIndex -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/spin#columnIndex">
+        <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/spin#columnType -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/spin#columnType">
+        <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/spin#columnWidth -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/spin#columnWidth">
+        <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/spin#labelTemplate -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/spin#labelTemplate">
+        <rdfs:domain rdf:resource="http://spinrdf.org/spin#Module"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/spin#private -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/spin#private">
+        <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/spin#returnType -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/spin#returnType">
+        <rdfs:domain rdf:resource="http://spinrdf.org/spin#Module"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/spin#rulePropertyMaxIterationCount -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/spin#rulePropertyMaxIterationCount">
+        <rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/spin#symbol -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/spin#symbol">
+        <rdfs:domain rdf:resource="http://spinrdf.org/spin#Module"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/spin#thisUnbound -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/spin#thisUnbound">
+        <rdfs:domain rdf:resource="http://spinrdf.org/sp#Command"/>
+        <rdfs:domain rdf:resource="http://spinrdf.org/sp#Query"/>
+        <rdfs:domain rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdfs:domain rdf:resource="http://spinrdf.org/spin#Rule"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/spin#violationPath -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/spin#violationPath">
+        <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/spin#violationRoot -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/spin#violationRoot">
+        <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/spin#violationSource -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/spin#violationSource">
+        <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://spinrdf.org/sp#as -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/sp#as">
+        <rdfs:range rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/sp#elements -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/sp#elements">
+        <rdfs:range rdf:resource="http://spinrdf.org/sp#Element"/>
+        <rdfs:range rdf:resource="http://spinrdf.org/sp#ElementGroup"/>
+        <rdfs:range rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/sp#path -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/sp#path">
+        <rdfs:domain rdf:resource="http://spinrdf.org/sp#Element"/>
+        <rdfs:domain rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdfs:domain rdf:resource="http://spinrdf.org/sp#Tuple"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdfs:range rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/sp#path1 -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/sp#path1">
+        <rdfs:range rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/sp#path2 -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/sp#path2">
+        <rdfs:range rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/sp#query -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/sp#query">
+        <rdfs:domain rdf:resource="http://spinrdf.org/sp#Element"/>
+        <rdfs:domain rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdfs:range rdf:resource="http://spinrdf.org/sp#Command"/>
+        <rdfs:range rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/sp#values -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/sp#values">
+        <rdfs:domain rdf:resource="http://spinrdf.org/sp#Command"/>
+        <rdfs:domain rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdfs:range rdf:resource="http://spinrdf.org/sp#Element"/>
+        <rdfs:range rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/sp#variable -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/sp#variable">
+        <rdfs:domain rdf:resource="http://spinrdf.org/sp#Element"/>
+        <rdfs:domain rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdfs:range rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/sp#where -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/sp#where">
+        <rdfs:range rdf:resource="http://spinrdf.org/sp#Element"/>
+        <rdfs:range rdf:resource="http://spinrdf.org/sp#ElementGroup"/>
+        <rdfs:range rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/spin#body -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/spin#body">
+        <rdfs:range rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/spin#column -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/spin#column">
+        <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/spin#command -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/spin#command">
+        <rdfs:range rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/spin#constraint -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/spin#constraint">
+        <rdfs:subPropertyOf rdf:resource="http://spinrdf.org/spin#command"/>
+        <rdfs:range rdf:resource="http://spinrdf.org/sp#Command"/>
+        <rdfs:range rdf:resource="http://spinrdf.org/sp#Query"/>
+        <rdfs:range rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/spin#constructor -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/spin#constructor">
+        <rdfs:range rdf:resource="http://spinrdf.org/sp#Command"/>
+        <rdfs:range rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/spin#fix -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/spin#fix">
+        <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdfs:range rdf:resource="http://spinrdf.org/spin#Module"/>
+        <rdfs:range rdf:resource="http://spinrdf.org/spin#Template"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/spin#inverseBody -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/spin#inverseBody">
+        <rdfs:domain rdf:resource="http://spinrdf.org/spin#Function"/>
+        <rdfs:domain rdf:resource="http://spinrdf.org/spin#Module"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdfs:range rdf:resource="http://spinrdf.org/sp#Command"/>
+        <rdfs:range rdf:resource="http://spinrdf.org/sp#Query"/>
+        <rdfs:range rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/spin#nextRuleProperty -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/spin#nextRuleProperty">
+        <rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/spin#query -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/spin#query">
+        <rdfs:range rdf:resource="http://spinrdf.org/sp#Command"/>
+        <rdfs:range rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/spin#rule -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/spin#rule">
+        <rdfs:range rdf:resource="http://spinrdf.org/sp#Command"/>
+        <rdfs:range rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/spin#update -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/spin#update">
+        <rdfs:range rdf:resource="http://spinrdf.org/sp#Command"/>
+        <rdfs:range rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/spin#violationDetail -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/spin#violationDetail">
+        <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/spin#violationLevel -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/spin#violationLevel">
+        <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://spinrdf.org/sp#Add -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/sp#Add">
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/sp#Command"/>
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/sp#Aggregation -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/sp#Aggregation">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/sp#AltPath -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/sp#AltPath">
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/sp#Asc -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/sp#Asc">
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/sp#Ask -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/sp#Ask">
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/sp#Command"/>
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/sp#Avg -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/sp#Avg">
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/sp#Bind -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/sp#Bind">
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/sp#Clear -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/sp#Clear">
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/sp#Command"/>
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/sp#Command -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/sp#Command">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/sp#Construct -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/sp#Construct">
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/sp#Command"/>
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/sp#Count -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/sp#Count">
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/sp#Create -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/sp#Create">
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/sp#Command"/>
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/sp#Delete -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/sp#Delete">
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/sp#Command"/>
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/sp#Update"/>
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/spin#Rule"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/sp#DeleteData -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/sp#DeleteData">
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/sp#Command"/>
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/sp#DeleteWhere -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/sp#DeleteWhere">
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/sp#Command"/>
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/sp#Desc -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/sp#Desc">
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/sp#Describe -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/sp#Describe">
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/sp#Command"/>
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/sp#Drop -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/sp#Drop">
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/sp#Command"/>
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/sp#Element -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/sp#Element">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/sp#ElementGroup -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/sp#ElementGroup">
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/sp#ElementList -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/sp#ElementList">
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/sp#Element"/>
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/sp#Exists -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/sp#Exists">
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/sp#Element"/>
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/sp#Filter -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/sp#Filter">
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/sp#GroupConcat -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/sp#GroupConcat">
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/sp#Insert -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/sp#Insert">
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/sp#Command"/>
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/sp#Update"/>
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/spin#Rule"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/sp#InsertData -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/sp#InsertData">
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/sp#Command"/>
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/sp#Let -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/sp#Let">
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/sp#Element"/>
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/sp#Load -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/sp#Load">
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/sp#Command"/>
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/sp#Max -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/sp#Max">
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/sp#Min -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/sp#Min">
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/sp#Minus -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/sp#Minus">
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/sp#Element"/>
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/sp#ModPath -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/sp#ModPath">
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/sp#Modify -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/sp#Modify">
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/sp#Command"/>
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/sp#NamedGraph -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/sp#NamedGraph">
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/sp#Element"/>
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/sp#NotExists -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/sp#NotExists">
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/sp#Element"/>
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/sp#Optional -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/sp#Optional">
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/sp#Element"/>
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/sp#OrderByCondition -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/sp#OrderByCondition">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/sp#Path -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/sp#Path">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/sp#Query -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/sp#Query">
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/sp#ReverseLinkPath -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/sp#ReverseLinkPath">
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/sp#ReversePath -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/sp#ReversePath">
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/sp#Sample -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/sp#Sample">
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/sp#Select -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/sp#Select">
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/sp#Command"/>
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/sp#SeqPath -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/sp#SeqPath">
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/sp#Service -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/sp#Service">
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/sp#Element"/>
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/sp#SubQuery -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/sp#SubQuery">
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/sp#Sum -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/sp#Sum">
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/sp#Triple -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/sp#Triple">
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/sp#TriplePath -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/sp#TriplePath">
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/sp#TriplePattern -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/sp#TriplePattern">
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/sp#Tuple"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/sp#TripleTemplate -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/sp#TripleTemplate">
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/sp#Tuple"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/sp#Tuple -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/sp#Tuple">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/sp#Union -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/sp#Union">
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/sp#Element"/>
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/sp#Update -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/sp#Update">
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/sp#Values -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/sp#Values">
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/sp#Variable -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/sp#Variable">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/sp#eq -->
+
+    <owl:Class rdf:about="http://spinrdf.org/sp#eq"/>
+    
+
+
+    <!-- http://spinrdf.org/sp#mul -->
+
+    <owl:Class rdf:about="http://spinrdf.org/sp#mul"/>
+    
+
+
+    <!-- http://spinrdf.org/sp#ne -->
+
+    <owl:Class rdf:about="http://spinrdf.org/sp#ne"/>
+    
+
+
+    <!-- http://spinrdf.org/spin#AskTemplate -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/spin#AskTemplate">
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/spin#Module"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/spin#AskTemplates -->
+
+    <owl:Class rdf:about="http://spinrdf.org/spin#AskTemplates">
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/spin#Modules"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://spinrdf.org/spin#ConstructTemplate -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/spin#ConstructTemplate">
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/spin#Module"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/spin#ConstructTemplates -->
+
+    <owl:Class rdf:about="http://spinrdf.org/spin#ConstructTemplates">
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/spin#Modules"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://spinrdf.org/spin#Function -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/spin#Function">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/spin#Functions -->
+
+    <owl:Class rdf:about="http://spinrdf.org/spin#Functions">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://spinrdf.org/spin#MagicProperties -->
+
+    <owl:Class rdf:about="http://spinrdf.org/spin#MagicProperties">
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/spin#Modules"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://spinrdf.org/spin#MagicProperty -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/spin#MagicProperty">
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/spin#Module"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/spin#Modules -->
+
+    <owl:Class rdf:about="http://spinrdf.org/spin#Modules"/>
+    
+
+
+    <!-- http://spinrdf.org/spin#Rule -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/spin#Rule">
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/spin#SelectTemplate -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/spin#SelectTemplate">
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/spin#Module"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/spin#SelectTemplates -->
+
+    <owl:Class rdf:about="http://spinrdf.org/spin#SelectTemplates">
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/spin#Modules"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://spinrdf.org/spin#Template -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/spin#Template">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/spin#Templates -->
+
+    <owl:Class rdf:about="http://spinrdf.org/spin#Templates">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://spinrdf.org/spin#UpdateTemplate -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/spin#UpdateTemplate">
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/spin#Module"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/spin#UpdateTemplates -->
+
+    <owl:Class rdf:about="http://spinrdf.org/spin#UpdateTemplates">
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/spin#Modules"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://spinrdf.org/spin#ask -->
+
+    <owl:Class rdf:about="http://spinrdf.org/spin#ask">
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/spin#Modules"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://spinrdf.org/spin#construct -->
+
+    <owl:Class rdf:about="http://spinrdf.org/spin#construct">
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/spin#Functions"/>
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/spin#Modules"/>
+    </owl:Class>
+    
+
+
+    <!-- http://spinrdf.org/spin#constructViolations -->
+
+    <owl:Class rdf:about="http://spinrdf.org/spin#constructViolations">
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/spin#Functions"/>
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/spin#Modules"/>
+    </owl:Class>
+    
+
+
+    <!-- http://spinrdf.org/spin#eval -->
+
+    <owl:Class rdf:about="http://spinrdf.org/spin#eval">
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/spin#Modules"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://spinrdf.org/spin#evalInGraph -->
+
+    <owl:Class rdf:about="http://spinrdf.org/spin#evalInGraph">
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/spin#Modules"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://spinrdf.org/spin#select -->
+
+    <owl:Class rdf:about="http://spinrdf.org/spin#select">
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/spin#Functions"/>
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/spin#Modules"/>
+    </owl:Class>
+    
+
+
+    <!-- http://spinrdf.org/spin#violatesConstraints -->
+
+    <owl:Class rdf:about="http://spinrdf.org/spin#violatesConstraints">
+        <rdfs:subClassOf rdf:resource="http://spinrdf.org/spin#Modules"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://topbraid.org/geoFigures#Rectangle -->
+
+    <owl:Class rdf:about="http://topbraid.org/geoFigures#Rectangle">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://topbraid.org/geoFigures#Square -->
+
+    <owl:Class rdf:about="http://topbraid.org/geoFigures#Square">
+        <rdfs:subClassOf rdf:resource="http://topbraid.org/geoFigures#Rectangle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#boolean -->
+
+    <owl:Class rdf:about="http://www.w3.org/2001/XMLSchema#boolean"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://spinrdf.org/sp#_area -->
+
+    <owl:NamedIndividual rdf:about="http://spinrdf.org/sp#_area">
+        <rdf:type rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdf:type rdf:resource="http://spinrdf.org/sp#Variable"/>
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <sp:varName>area</sp:varName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://spinrdf.org/sp#_height -->
+
+    <owl:NamedIndividual rdf:about="http://spinrdf.org/sp#_height">
+        <rdf:type rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdf:type rdf:resource="http://spinrdf.org/sp#Variable"/>
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <sp:varName>height</sp:varName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://spinrdf.org/sp#_width -->
+
+    <owl:NamedIndividual rdf:about="http://spinrdf.org/sp#_width">
+        <rdf:type rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdf:type rdf:resource="http://spinrdf.org/sp#Variable"/>
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <sp:varName>width</sp:varName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://spinrdf.org/spin#AskTemplates -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/spin#AskTemplates">
+        <rdf:type rdf:resource="http://spinrdf.org/spin#Module"/>
+        <rdf:type rdf:resource="http://spinrdf.org/spin#Template"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/spin#ConstructTemplates -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/spin#ConstructTemplates">
+        <rdf:type rdf:resource="http://spinrdf.org/spin#Module"/>
+        <rdf:type rdf:resource="http://spinrdf.org/spin#Template"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/spin#Error -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/spin#Error">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/spin#Fatal -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/spin#Fatal">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/spin#Functions -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/spin#Functions">
+        <rdf:type rdf:resource="http://spinrdf.org/spin#Module"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/spin#Info -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/spin#Info">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/spin#MagicProperties -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/spin#MagicProperties">
+        <rdf:type rdf:resource="http://spinrdf.org/spin#Function"/>
+        <rdf:type rdf:resource="http://spinrdf.org/spin#Module"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/spin#Modules -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/spin#Modules">
+        <spin:command rdf:resource="http://topbraid.org/geoFigures#genid2147483653"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/spin#SelectTemplates -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/spin#SelectTemplates">
+        <rdf:type rdf:resource="http://spinrdf.org/spin#Module"/>
+        <rdf:type rdf:resource="http://spinrdf.org/spin#TableDataProvider"/>
+        <rdf:type rdf:resource="http://spinrdf.org/spin#Template"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/spin#Templates -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/spin#Templates">
+        <rdf:type rdf:resource="http://spinrdf.org/spin#Module"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/spin#UpdateTemplates -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/spin#UpdateTemplates">
+        <rdf:type rdf:resource="http://spinrdf.org/spin#Module"/>
+        <rdf:type rdf:resource="http://spinrdf.org/spin#Template"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/spin#Warning -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/spin#Warning">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/spin#_arg1 -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/spin#_arg1">
+        <rdf:type rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/spin#_arg2 -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/spin#_arg2">
+        <rdf:type rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/spin#_arg3 -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/spin#_arg3">
+        <rdf:type rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/spin#_arg4 -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/spin#_arg4">
+        <rdf:type rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/spin#_arg5 -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/spin#_arg5">
+        <rdf:type rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/spin#_this -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/spin#_this">
+        <rdf:type rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/spin#ask -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/spin#ask">
+        <rdf:type rdf:resource="http://spinrdf.org/spin#Module"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/spin#construct -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/spin#construct">
+        <rdf:type rdf:resource="http://spinrdf.org/spin#Function"/>
+        <rdf:type rdf:resource="http://spinrdf.org/spin#Module"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/spin#constructViolations -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/spin#constructViolations">
+        <rdf:type rdf:resource="http://spinrdf.org/spin#Function"/>
+        <rdf:type rdf:resource="http://spinrdf.org/spin#Module"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/spin#eval -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/spin#eval">
+        <rdf:type rdf:resource="http://spinrdf.org/spin#Module"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/spin#evalInGraph -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/spin#evalInGraph">
+        <rdf:type rdf:resource="http://spinrdf.org/spin#Module"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/spin#select -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/spin#select">
+        <rdf:type rdf:resource="http://spinrdf.org/spin#Function"/>
+        <rdf:type rdf:resource="http://spinrdf.org/spin#Module"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://spinrdf.org/spin#violatesConstraints -->
+
+    <rdf:Description rdf:about="http://spinrdf.org/spin#violatesConstraints">
+        <rdf:type rdf:resource="http://spinrdf.org/spin#Module"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://topbraid.org/geoFigures#Rectangle -->
+
+    <owl:NamedIndividual rdf:about="http://topbraid.org/geoFigures#Rectangle">
+        <spin:command rdf:resource="http://topbraid.org/geoFigures#genid2147483666"/>
+        <spin:command rdf:resource="http://topbraid.org/geoFigures#genid2147483669"/>
+        <spin:rule>
+            <rdf:Description rdf:nodeID="genid1">
+                <rdf:type rdf:resource="http://spinrdf.org/sp#Construct"/>
+                <sp:where>
+                    <rdf:Description/>
+                </sp:where>
+                <sp:templates>
+                    <rdf:Description/>
+                </sp:templates>
+                <sp:text>PREFIX  :     &lt;http://topbraid.org/geoFigures#&gt;
+PREFIX  owl:  &lt;http://www.w3.org/2002/07/owl#&gt;
+PREFIX  fn:   &lt;http://www.w3.org/2005/xpath-functions#&gt;
+PREFIX  tops: &lt;http://www.topbraid.org/tops#&gt;
+PREFIX  xsd:  &lt;http://www.w3.org/2001/XMLSchema#&gt;
+PREFIX  rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+PREFIX  smf:  &lt;http://topbraid.org/sparqlmotionfunctions#&gt;
+PREFIX  spif: &lt;http://spinrdf.org/spif#&gt;
+PREFIX  backspin: &lt;http://topbraid.org/backspin#&gt;
+PREFIX  tablesmap: &lt;http://topbraid.org/spin/tablesmap#&gt;
+PREFIX  search: &lt;http://topbraid.org/search#&gt;
+PREFIX  tables: &lt;http://topbraid.org/tables#&gt;
+PREFIX  sml:  &lt;http://topbraid.org/sparqlmotionlib#&gt;
+PREFIX  ui:   &lt;http://uispin.org/ui#&gt;
+PREFIX  arg:  &lt;http://spinrdf.org/arg#&gt;
+PREFIX  sm2wsdl: &lt;http://topbraid.org/sparqlmotion/sm2wsdl.sms#&gt;
+PREFIX  sm:   &lt;http://topbraid.org/sparqlmotion#&gt;
+PREFIX  spinmap: &lt;http://spinrdf.org/spinmap#&gt;
+PREFIX  sp:   &lt;http://spinrdf.org/sp#&gt;
+PREFIX  spinmapl: &lt;http://topbraid.org/spin/spinmapl#&gt;
+PREFIX  afn:  &lt;http://jena.hpl.hp.com/ARQ/function#&gt;
+PREFIX  skosspin: &lt;http://topbraid.org/spin/skosspin#&gt;
+PREFIX  owlrl: &lt;http://topbraid.org/spin/owlrl#&gt;
+PREFIX  spl:  &lt;http://spinrdf.org/spl#&gt;
+PREFIX  jfn:  &lt;java:org.apache.jena.sparql.function.library.&gt;
+PREFIX  spr:  &lt;http://spinrdf.org/spr#&gt;
+PREFIX  rdf:  &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+PREFIX  pf:   &lt;http://jena.hpl.hp.com/ARQ/property#&gt;
+PREFIX  spin: &lt;http://spinrdf.org/spin#&gt;
+PREFIX  spra: &lt;http://spinrdf.org/spra#&gt;
+PREFIX  swa:  &lt;http://topbraid.org/swa#&gt;
+
+CONSTRUCT 
+  { 
+    ?this :area ?area .
+  }
+WHERE
+  { ?this  :height  ?height ;
+           :width   ?width
+    LET (?area := ( ?width * ?height ))
+  }
+</sp:text>
+                <rdfs:comment>Computes area := width * height</rdfs:comment>
+            </rdf:Description>
+        </spin:rule>
+        <spin:rule>
+            <rdf:Description rdf:nodeID="genid4">
+                <rdf:type rdf:resource="http://spinrdf.org/sp#Construct"/>
+                <sp:where>
+                    <rdf:Description/>
+                </sp:where>
+                <sp:templates>
+                    <rdf:Description/>
+                </sp:templates>
+                <sp:text>PREFIX  :     &lt;http://topbraid.org/geoFigures#&gt;
+PREFIX  owl:  &lt;http://www.w3.org/2002/07/owl#&gt;
+PREFIX  fn:   &lt;http://www.w3.org/2005/xpath-functions#&gt;
+PREFIX  tops: &lt;http://www.topbraid.org/tops#&gt;
+PREFIX  xsd:  &lt;http://www.w3.org/2001/XMLSchema#&gt;
+PREFIX  rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+PREFIX  smf:  &lt;http://topbraid.org/sparqlmotionfunctions#&gt;
+PREFIX  spif: &lt;http://spinrdf.org/spif#&gt;
+PREFIX  backspin: &lt;http://topbraid.org/backspin#&gt;
+PREFIX  tablesmap: &lt;http://topbraid.org/spin/tablesmap#&gt;
+PREFIX  search: &lt;http://topbraid.org/search#&gt;
+PREFIX  tables: &lt;http://topbraid.org/tables#&gt;
+PREFIX  sml:  &lt;http://topbraid.org/sparqlmotionlib#&gt;
+PREFIX  ui:   &lt;http://uispin.org/ui#&gt;
+PREFIX  arg:  &lt;http://spinrdf.org/arg#&gt;
+PREFIX  sm2wsdl: &lt;http://topbraid.org/sparqlmotion/sm2wsdl.sms#&gt;
+PREFIX  sm:   &lt;http://topbraid.org/sparqlmotion#&gt;
+PREFIX  spinmap: &lt;http://spinrdf.org/spinmap#&gt;
+PREFIX  sp:   &lt;http://spinrdf.org/sp#&gt;
+PREFIX  spinmapl: &lt;http://topbraid.org/spin/spinmapl#&gt;
+PREFIX  afn:  &lt;http://jena.hpl.hp.com/ARQ/function#&gt;
+PREFIX  skosspin: &lt;http://topbraid.org/spin/skosspin#&gt;
+PREFIX  owlrl: &lt;http://topbraid.org/spin/owlrl#&gt;
+PREFIX  spl:  &lt;http://spinrdf.org/spl#&gt;
+PREFIX  jfn:  &lt;java:org.apache.jena.sparql.function.library.&gt;
+PREFIX  spr:  &lt;http://spinrdf.org/spr#&gt;
+PREFIX  rdf:  &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+PREFIX  pf:   &lt;http://jena.hpl.hp.com/ARQ/property#&gt;
+PREFIX  spin: &lt;http://spinrdf.org/spin#&gt;
+PREFIX  spra: &lt;http://spinrdf.org/spra#&gt;
+PREFIX  swa:  &lt;http://topbraid.org/swa#&gt;
+
+CONSTRUCT 
+  { 
+    ?this rdf:type :Square .
+  }
+WHERE
+  { ?this  :height  ?height ;
+           :width   ?width
+    FILTER ( ?height = ?width )
+  }
+</sp:text>
+                <rdfs:comment>Infer a square if width and height are the same.</rdfs:comment>
+            </rdf:Description>
+        </spin:rule>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://topbraid.org/geoFigures#Rectangle_1 -->
+
+    <owl:NamedIndividual rdf:about="http://topbraid.org/geoFigures#Rectangle_1">
+        <rdf:type rdf:resource="http://topbraid.org/geoFigures#Rectangle"/>
+        <rdf:type rdf:resource="http://topbraid.org/geoFigures#Square"/>
+        <rdfs:comment>Rectangle that is supposed to be square</rdfs:comment>
+        <rdfs:label>Rectangle_1 </rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://topbraid.org/geoFigures#Square -->
+
+    <owl:NamedIndividual rdf:about="http://topbraid.org/geoFigures#Square">
+        <spin:command rdf:resource="http://topbraid.org/geoFigures#genid2147483672"/>
+        <spin:constraint>
+            <rdf:Description rdf:nodeID="genid7">
+                <rdf:type rdf:resource="http://spinrdf.org/sp#Ask"/>
+                <sp:where>
+                    <rdf:Description/>
+                </sp:where>
+                <sp:text>PREFIX  :     &lt;http://topbraid.org/geoFigures#&gt;
+PREFIX  owl:  &lt;http://www.w3.org/2002/07/owl#&gt;
+PREFIX  fn:   &lt;http://www.w3.org/2005/xpath-functions#&gt;
+PREFIX  tops: &lt;http://www.topbraid.org/tops#&gt;
+PREFIX  xsd:  &lt;http://www.w3.org/2001/XMLSchema#&gt;
+PREFIX  rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+PREFIX  smf:  &lt;http://topbraid.org/sparqlmotionfunctions#&gt;
+PREFIX  spif: &lt;http://spinrdf.org/spif#&gt;
+PREFIX  backspin: &lt;http://topbraid.org/backspin#&gt;
+PREFIX  tablesmap: &lt;http://topbraid.org/spin/tablesmap#&gt;
+PREFIX  search: &lt;http://topbraid.org/search#&gt;
+PREFIX  tables: &lt;http://topbraid.org/tables#&gt;
+PREFIX  sml:  &lt;http://topbraid.org/sparqlmotionlib#&gt;
+PREFIX  ui:   &lt;http://uispin.org/ui#&gt;
+PREFIX  arg:  &lt;http://spinrdf.org/arg#&gt;
+PREFIX  sm2wsdl: &lt;http://topbraid.org/sparqlmotion/sm2wsdl.sms#&gt;
+PREFIX  sm:   &lt;http://topbraid.org/sparqlmotion#&gt;
+PREFIX  spinmap: &lt;http://spinrdf.org/spinmap#&gt;
+PREFIX  sp:   &lt;http://spinrdf.org/sp#&gt;
+PREFIX  spinmapl: &lt;http://topbraid.org/spin/spinmapl#&gt;
+PREFIX  afn:  &lt;http://jena.hpl.hp.com/ARQ/function#&gt;
+PREFIX  skosspin: &lt;http://topbraid.org/spin/skosspin#&gt;
+PREFIX  owlrl: &lt;http://topbraid.org/spin/owlrl#&gt;
+PREFIX  spl:  &lt;http://spinrdf.org/spl#&gt;
+PREFIX  jfn:  &lt;java:org.apache.jena.sparql.function.library.&gt;
+PREFIX  spr:  &lt;http://spinrdf.org/spr#&gt;
+PREFIX  rdf:  &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+PREFIX  pf:   &lt;http://jena.hpl.hp.com/ARQ/property#&gt;
+PREFIX  spin: &lt;http://spinrdf.org/spin#&gt;
+PREFIX  spra: &lt;http://spinrdf.org/spra#&gt;
+PREFIX  swa:  &lt;http://topbraid.org/swa#&gt;
+
+ASK
+WHERE
+  { ?this  :height  ?height ;
+           :width   ?width
+    FILTER ( ?width != ?height )
+  }
+</sp:text>
+                <rdfs:comment>Checks if height = width</rdfs:comment>
+            </rdf:Description>
+        </spin:constraint>
+        <spin:query rdf:resource="http://topbraid.org/geoFigures#genid2147483672"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://topbraid.org/geoFigures#area -->
+
+    <owl:NamedIndividual rdf:about="http://topbraid.org/geoFigures#area">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://topbraid.org/geoFigures#genid2147483653 -->
+
+    <owl:NamedIndividual rdf:about="http://topbraid.org/geoFigures#genid2147483653">
+        <rdf:type rdf:resource="http://spinrdf.org/sp#Command"/>
+        <rdf:type rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdf:type rdf:resource="http://spinrdf.org/spin#Rule"/>
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://topbraid.org/geoFigures#genid2147483666 -->
+
+    <owl:NamedIndividual rdf:about="http://topbraid.org/geoFigures#genid2147483666">
+        <rdf:type rdf:resource="http://spinrdf.org/sp#Command"/>
+        <rdf:type rdf:resource="http://spinrdf.org/sp#Query"/>
+        <rdf:type rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdf:type rdf:resource="http://spinrdf.org/spin#Rule"/>
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://topbraid.org/geoFigures#genid2147483667 -->
+
+    <owl:NamedIndividual rdf:about="http://topbraid.org/geoFigures#genid2147483667">
+        <rdf:type rdf:resource="http://spinrdf.org/sp#Element"/>
+        <rdf:type rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://topbraid.org/geoFigures#genid2147483669 -->
+
+    <owl:NamedIndividual rdf:about="http://topbraid.org/geoFigures#genid2147483669">
+        <rdf:type rdf:resource="http://spinrdf.org/sp#Command"/>
+        <rdf:type rdf:resource="http://spinrdf.org/sp#Query"/>
+        <rdf:type rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdf:type rdf:resource="http://spinrdf.org/spin#Rule"/>
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://topbraid.org/geoFigures#genid2147483670 -->
+
+    <owl:NamedIndividual rdf:about="http://topbraid.org/geoFigures#genid2147483670">
+        <rdf:type rdf:resource="http://spinrdf.org/sp#Element"/>
+        <rdf:type rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://topbraid.org/geoFigures#genid2147483672 -->
+
+    <owl:NamedIndividual rdf:about="http://topbraid.org/geoFigures#genid2147483672">
+        <rdf:type rdf:resource="http://spinrdf.org/sp#Command"/>
+        <rdf:type rdf:resource="http://spinrdf.org/sp#Query"/>
+        <rdf:type rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://topbraid.org/geoFigures#genid2147483673 -->
+
+    <owl:NamedIndividual rdf:about="http://topbraid.org/geoFigures#genid2147483673">
+        <rdf:type rdf:resource="http://spinrdf.org/sp#Element"/>
+        <rdf:type rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://topbraid.org/geoFigures#genid2147483675 -->
+
+    <owl:NamedIndividual rdf:about="http://topbraid.org/geoFigures#genid2147483675">
+        <rdf:type rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdf:type rdf:resource="http://spinrdf.org/sp#Triple"/>
+        <rdf:type rdf:resource="http://spinrdf.org/sp#Tuple"/>
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://topbraid.org/geoFigures#genid2147483676 -->
+
+    <owl:NamedIndividual rdf:about="http://topbraid.org/geoFigures#genid2147483676">
+        <rdf:type rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdf:type rdf:resource="http://spinrdf.org/sp#Triple"/>
+        <rdf:type rdf:resource="http://spinrdf.org/sp#Tuple"/>
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://topbraid.org/geoFigures#genid2147483677 -->
+
+    <owl:NamedIndividual rdf:about="http://topbraid.org/geoFigures#genid2147483677">
+        <rdf:type rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdf:type rdf:resource="http://spinrdf.org/sp#Triple"/>
+        <rdf:type rdf:resource="http://spinrdf.org/sp#Tuple"/>
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://topbraid.org/geoFigures#genid2147483678 -->
+
+    <owl:NamedIndividual rdf:about="http://topbraid.org/geoFigures#genid2147483678">
+        <rdf:type rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdf:type rdf:resource="http://spinrdf.org/sp#Triple"/>
+        <rdf:type rdf:resource="http://spinrdf.org/sp#Tuple"/>
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://topbraid.org/geoFigures#genid2147483679 -->
+
+    <owl:NamedIndividual rdf:about="http://topbraid.org/geoFigures#genid2147483679">
+        <rdf:type rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdf:type rdf:resource="http://spinrdf.org/sp#Triple"/>
+        <rdf:type rdf:resource="http://spinrdf.org/sp#Tuple"/>
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://topbraid.org/geoFigures#genid2147483680 -->
+
+    <owl:NamedIndividual rdf:about="http://topbraid.org/geoFigures#genid2147483680">
+        <rdf:type rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdf:type rdf:resource="http://spinrdf.org/sp#Triple"/>
+        <rdf:type rdf:resource="http://spinrdf.org/sp#Tuple"/>
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://topbraid.org/geoFigures#genid2147483681 -->
+
+    <owl:NamedIndividual rdf:about="http://topbraid.org/geoFigures#genid2147483681">
+        <rdf:type rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdf:type rdf:resource="http://spinrdf.org/sp#Triple"/>
+        <rdf:type rdf:resource="http://spinrdf.org/sp#Tuple"/>
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://topbraid.org/geoFigures#genid2147483682 -->
+
+    <owl:NamedIndividual rdf:about="http://topbraid.org/geoFigures#genid2147483682"/>
+    
+
+
+    <!-- http://topbraid.org/geoFigures#genid2147483683 -->
+
+    <owl:NamedIndividual rdf:about="http://topbraid.org/geoFigures#genid2147483683">
+        <rdf:type rdf:resource="http://spinrdf.org/sp#Element"/>
+        <rdf:type rdf:resource="http://spinrdf.org/sp#ElementGroup"/>
+        <rdf:type rdf:resource="http://spinrdf.org/sp#ElementList"/>
+        <rdf:type rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://topbraid.org/geoFigures#genid2147483684 -->
+
+    <owl:NamedIndividual rdf:about="http://topbraid.org/geoFigures#genid2147483684">
+        <rdf:type rdf:resource="http://spinrdf.org/sp#Element"/>
+        <rdf:type rdf:resource="http://spinrdf.org/sp#ElementGroup"/>
+        <rdf:type rdf:resource="http://spinrdf.org/sp#ElementList"/>
+        <rdf:type rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://topbraid.org/geoFigures#genid2147483685 -->
+
+    <owl:NamedIndividual rdf:about="http://topbraid.org/geoFigures#genid2147483685">
+        <rdf:type rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdf:type rdf:resource="http://spinrdf.org/sp#Triple"/>
+        <rdf:type rdf:resource="http://spinrdf.org/sp#Tuple"/>
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://topbraid.org/geoFigures#genid2147483686 -->
+
+    <owl:NamedIndividual rdf:about="http://topbraid.org/geoFigures#genid2147483686"/>
+    
+
+
+    <!-- http://topbraid.org/geoFigures#genid2147483687 -->
+
+    <owl:NamedIndividual rdf:about="http://topbraid.org/geoFigures#genid2147483687">
+        <rdf:type rdf:resource="http://spinrdf.org/sp#Element"/>
+        <rdf:type rdf:resource="http://spinrdf.org/sp#ElementGroup"/>
+        <rdf:type rdf:resource="http://spinrdf.org/sp#ElementList"/>
+        <rdf:type rdf:resource="http://spinrdf.org/sp#SystemClass"/>
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://topbraid.org/geoFigures#height -->
+
+    <owl:NamedIndividual rdf:about="http://topbraid.org/geoFigures#height">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://topbraid.org/geoFigures#square1 -->
+
+    <owl:NamedIndividual rdf:about="http://topbraid.org/geoFigures#square1">
+        <rdf:type rdf:resource="http://topbraid.org/geoFigures#Rectangle"/>
+        <rdf:type rdf:resource="http://topbraid.org/geoFigures#Square"/>
+        <rdfs:label>square1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://topbraid.org/geoFigures#width -->
+
+    <owl:NamedIndividual rdf:about="http://topbraid.org/geoFigures#width">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#type -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </owl:NamedIndividual>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://spinrdf.org/sp#Bind"/>
+        <sp:variable rdf:resource="http://spinrdf.org/sp#_area"/>
+        <sp:expression>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://spinrdf.org/sp#mul"/>
+                <sp:arg1 rdf:resource="http://spinrdf.org/sp#_width"/>
+                <sp:arg2 rdf:resource="http://spinrdf.org/sp#_height"/>
+            </rdf:Description>
+        </sp:expression>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://spinrdf.org/sp#Filter"/>
+        <sp:expression>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://spinrdf.org/sp#eq"/>
+                <sp:arg1 rdf:resource="http://spinrdf.org/sp#_height"/>
+                <sp:arg2 rdf:resource="http://spinrdf.org/sp#_width"/>
+            </rdf:Description>
+        </sp:expression>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://spinrdf.org/sp#Filter"/>
+        <sp:expression>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://spinrdf.org/sp#ne"/>
+                <sp:arg1 rdf:resource="http://spinrdf.org/sp#_width"/>
+                <sp:arg2 rdf:resource="http://spinrdf.org/sp#_height"/>
+            </rdf:Description>
+        </sp:expression>
+    </rdf:Description>
+    <rdf:Description>
+        <sp:object rdf:resource="http://spinrdf.org/sp#_width"/>
+        <sp:subject rdf:resource="http://spinrdf.org/spin#_this"/>
+    </rdf:Description>
+    <rdf:Description>
+        <sp:object rdf:resource="http://spinrdf.org/sp#_height"/>
+        <sp:subject rdf:resource="http://spinrdf.org/spin#_this"/>
+    </rdf:Description>
+    <rdf:Description>
+        <sp:object rdf:resource="http://spinrdf.org/sp#_height"/>
+        <sp:subject rdf:resource="http://spinrdf.org/spin#_this"/>
+    </rdf:Description>
+    <rdf:Description>
+        <sp:object rdf:resource="http://spinrdf.org/sp#_width"/>
+        <sp:subject rdf:resource="http://spinrdf.org/spin#_this"/>
+    </rdf:Description>
+    <rdf:Description>
+        <sp:object rdf:resource="http://spinrdf.org/sp#_width"/>
+        <sp:subject rdf:resource="http://spinrdf.org/spin#_this"/>
+    </rdf:Description>
+    <rdf:Description>
+        <sp:object rdf:resource="http://spinrdf.org/sp#_height"/>
+        <sp:subject rdf:resource="http://spinrdf.org/spin#_this"/>
+    </rdf:Description>
+    <rdf:Description>
+        <sp:object rdf:resource="http://spinrdf.org/sp#_area"/>
+        <sp:subject rdf:resource="http://spinrdf.org/spin#_this"/>
+    </rdf:Description>
+    <rdf:Description>
+        <sp:object rdf:resource="http://topbraid.org/geoFigures#Square"/>
+        <sp:predicate rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <sp:subject rdf:resource="http://spinrdf.org/spin#_this"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://topbraid.org/geoFigures#Rectangle">
+        <rdfs:label>Rectangle</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://topbraid.org/geoFigures#Square">
+        <rdfs:label>Square</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
